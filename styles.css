@@ -1,0 +1,79 @@
+/* pink collagen color --- rgba(255, 84, 106, 0.69) */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.navbar {
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.navbar img {
+    width: 170px;
+    height: 45px;
+}
+
+#product-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* #true-science-tagline {
+    margin-top: -30px;
+} */
+
+.tagline {
+    font-family: "Playfair Display", serif;
+    color: rgba(255, 84, 106, 0.69);
+    font-size: 1.3em;
+}
+
+#warning {
+    width: 100%;
+    height: 80%;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgba(255, 84, 106, 0.50);
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#featured-products-title {
+    font-family: "Playfair Display", serif;
+    color: rgba(255, 84, 106, 0.69);
+    font-size: 1.9em;
+    margin-top: 20px;
+}
+
+.products-gray-back {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+#collagen {
+    font-family: "Playfair Display", serif;
+    color: rgba(255, 84, 106, 0.69);
+    font-size: 1.9em;
+}
+
+#comparison {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
