@@ -65,7 +65,7 @@ body {
 
 }
 
-#collagen {
+.headline {
     font-family: "Playfair Display", serif;
     color: rgba(255, 84, 106, 0.69);
     font-size: 1.9em;
