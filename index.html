@@ -27,6 +27,24 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -66,6 +84,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#influencers">Influencers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Resources">More Resources</a>
               </li>
               <!-- <li class="nav-item">
                 <a
@@ -126,7 +147,7 @@
     <section class="featured-products" id="featured-products">
       <div class="container">
         <div class="row">
-          <h2 id="featured-products-title" class="text-center">
+          <h2 id="featured-products-title" class="text-center section-heading">
             Featured Products
           </h2>
           <hr />
@@ -135,15 +156,16 @@
           <div class="col-md-6">
             <div>
               <img
-                class="products-gray-back"
+                class="mb-4 image img-fluid"
                 src="./public/imgs/1656731627_liquid-collagen-gray-background.webp"
                 alt="bottle of activated liquid collagen product picture"
               />
             </div>
 
-            <h3 class="text-center headline" id="collagen">
+            <h3 class="text-center headline subheading" id="collagen">
               TrueScience&#174; Liquid Collagen
             </h3>
+            <span class="thirty-day-supply"><p>30-Day Supply</p></span>
             <p id="collagen-description" class="text-center">
               Get healthy, glowing skin with a delicious blend that activates,
               replenishes, and maintains collagen to support firmness and
@@ -161,17 +183,19 @@
           <div class="col-md-6">
             <div>
               <img
-                class="products-gray-back img-fluid"
-                id="nrf-2-collagen-image"
+                class="products-gray-back img-fluid image mb-4"
                 src="./public/imgs/1656731655_liquid-collagen-stack-gray-background.webp "
                 alt="bottle of activated liquid collage and a bottle of NRF-2 side by side product picture"
               />
             </div>
 
-            <h3 class="text-center headline">
+            <h3 class="text-center headline subheading">
               Healthy Glow Essentials Stack&trade;
+              <br />
+              <span id="tagline">Ready.Set.Glow</span>
             </h3>
-            <h4 class="text-center headline">Ready.Set.Glow</h4>
+            <span class="thirty-day-supply"><p>30-Day Supply</p></span>
+
             <p class="text-center">
               Vibrant, youthful skin comes from within when you pair two
               products with beautifully ageless benefits. Together, true science
@@ -198,13 +222,13 @@
     <section class="comparison" id="comparison">
       <div class="container my-4">
         <div class="row">
-          <h3 class="text-center heading-1">HOW DOES IT COMPARE?</h3>
+          <h2 class="text-center section-heading">How Does It Compare?</h2>
           <div class="col-md-12">
             <hr />
             <div>
               <img
                 id="comparison"
-                class="img-fluid"
+                class="img-fluid image"
                 src="./public/imgs/comparison-chart.webp"
                 alt="activated collagen comparison to other collagen product chart"
               />
@@ -217,58 +241,30 @@
     <section class="testimonials" id="testimonials">
       <div class="container my-6">
         <div class="row">
-          <h3 class="text-center heading-1 mb-6">Testimonials</h3>
+          <h2 class="text-center mb-6 section-heading">Testimonials</h2>
+          <hr />
+          <p class="text-center">
+            Don't just take our word for it. See what our customers are saying
+            about TrueScience Liquid Collagen and the impact it's having on
+            their lives.
+          </p>
           <div class="col-md-6">
             <img
+              class="img-fluid image"
               id="collagen-testimonial-image"
-              src="./public/imgs/faq-ts-liquid-collagen.jpg"
+              src="./public/imgs/testimonials/testimonial1.jpg"
               alt=""
             />
+            <blockquote>
+              <p>
+                I am all for aging gracefully and naturally using inside and
+                outside solutions to optimize my health from a root cause which
+                obviously shows in one's skin. But I can't be bothered with
+                faffing about, going to salons and such.
+              </p>
+            </blockquote>
           </div>
-          <div class="col-md-6">
-            <h3 class="text-center headline">True Science. True Results</h3>
-            <p>
-              Clinical trials on key ingredients showed improvements after 8
-              weeks.* Individual results will vary.
-            </p>
-
-            <ul>
-              <li>Increased collagen density by 42%*</li>
-              <li>Increased catalase (antioxidant) by 202%*</li>
-              <li>
-                Increased skin moisture by 18%* Increased brightness by 5%*
-              </li>
-              <li>Increased smoothness by 10%*</li>
-              <li>Decreased depth of crow's feet by 22%*</li>
-              <li>Improved appearance of pores and spots by 10%*</li>
-            </ul>
-            <p>
-              A cell-culture study on red quinoa revealed how this ingredients
-              works to help support health skin*:
-            </p>
-            <ul>
-              <li>
-                Increased activation of SOD gene up to 27 times to produce
-                antioxidants that can help defend skin cells from oxidative
-                stress.*
-              </li>
-              <li>
-                Upregulated epidermal barrier structure genes (TGM1, KRT1,
-                KRT10) by up to 5 times to support skin's strength and
-                resilience.*
-              </li>
-              <li>
-                Upregulated gene that provides instructions on how to make parts
-                of Type I collagen (COL1A2) by 43% to support collagen
-                production.*
-              </li>
-              <li>
-                Downregulated activity of gene that produces enzymes responsible
-                for degrading collagen (MMP9) by up to 33% to help maintain
-                collagen you already have.*
-              </li>
-            </ul>
-          </div>
+          <div class="col-md-6"></div>
         </div>
       </div>
     </section>
@@ -276,25 +272,54 @@
     <section class="influencers" id="influencers">
       <div class="container my-4">
         <div class="row">
-          <h3 class="text-center headline">Are you an influencer?</h3>
+          <h2 class="text-center section-heading">Are you an influencer?</h2>
           <col-md-6>
             <hr />
             <div>
               <img
-                class="img-fluid"
+                class="img-fluid image"
                 id="influencer-image"
                 src="./public/imgs/influencer/influencer.png"
                 alt="a social media influencer holding a bottle of collagen and taking a selfie"
               />
             </div>
+            <div class="my-4">
+              <h3 class="text-center">Apply now for a</h3>
+              <h2 class="free-trial-headline text-center">
+                FREE 30-Day Liquid Collagen Trial
+              </h2>
+            </div>
+            <hr />
+            <p class="lead text-center">
+              Attention all social media influencers! Are you looking for a
+              game-changing product that will take your social media game to the
+              next level? Look no further than TrueScience liquid collagen!
+              We're searching for three social media superstars who want to
+              experience the transformative power of our premium collagen
+              supplement - and we're giving it away for FREE for 30 days! With
+              its revolutionary formula, TrueScience liquid collagen is a
+              must-have addition to any influencer's beauty routine. Don't miss
+              out on this incredible opportunity to enhance your beauty and
+              elevate your social media presence. Click below for more details
+              and to apply now!
+            </p>
+            <div class="text-center mt-4">
+              <button class="btn text-center">Apply Now</button>
+            </div>
           </col-md-6>
         </div>
       </div>
     </section>
-    <!-- <section class="footer">
+
+    <section class="footer" id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
+            <p class="text-center">
+              &copy Copyright 2023 | Activated Solutions, LLC
+            </p>
+          </div>
+          <div class="col-md-6">
             <p>
               *These statements have not been evaluated by the food and drug
               administration. These products are not intended to diagnose,
@@ -303,7 +328,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
