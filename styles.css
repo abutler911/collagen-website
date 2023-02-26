@@ -12,6 +12,16 @@ p {
 
 }
 
+.bold {
+    font-weight: 900;
+}
+
+.badge {
+    background-color: #00a7e0;
+    font-size: 0.7em;
+    height: auto;
+}
+
 .main {
     background-color: rgba(196, 196, 196, 0.5);
 
