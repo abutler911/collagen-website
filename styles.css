@@ -1,5 +1,3 @@
-/* pink collagen color --- rgba(255, 84, 106, 0.69) */
-
 body {
     margin: 0;
     padding: 0;
@@ -9,11 +7,6 @@ body {
 
 p {
     font-size: 1.2em;
-
-}
-
-.bold {
-    font-weight: 900;
 }
 
 .badge {
@@ -31,14 +24,11 @@ p {
     margin-bottom: 30px;
 }
 
-
-
 .navbar {
     background-color: rgba(196, 196, 196, 0.7);
     position: absolute;
     width: 100%;
     z-index: 9999;
-
 }
 
 .nav-item {
@@ -75,10 +65,6 @@ p {
     font-size: 2em;
     text-align: center;
 }
-
-/* #true-science-tagline {
-    margin-top: -30px;
-} */
 
 .tagline {
     font-family: "Playfair Display", serif;
@@ -123,40 +109,6 @@ p {
     margin-top: 25px;
 }
 
-/* .products-gray-back {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-
-
-} */
-
-/* #nrf-2-collagen-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-
-
-#comparison {
-    width: 100%;
-    height: 85%;
-    border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-}
-
-#collagen-testimonial-image {
-    height: 90%;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-} */
-
 .image {
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -179,8 +131,6 @@ p {
     border-left: 10px solid rgba(255, 84, 106, 0.69);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-
-
 }
 
 .quote-border-right {
@@ -188,8 +138,6 @@ p {
     border-right: 10px solid rgba(255, 84, 106, 0.69);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-
-
 }
 
 blockquote:before {
@@ -199,7 +147,6 @@ blockquote:before {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-
 }
 
 blockquote:after {
@@ -209,13 +156,11 @@ blockquote:after {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-
 }
 
 blockquote p {
     display: inline;
     font-size: 1.2em;
-
 }
 
 .resource {
@@ -230,14 +175,12 @@ blockquote p {
     /* text-align: center; */
     font-size: 1.2em;
     color: rgba(0, 0, 0, 1);
-
 }
 
 .bi {
     font-size: 1.4em;
     color: rgba(255, 84, 106, 0.69);
     margin-right: 10px;
-
 }
 
 #footer {
@@ -249,13 +192,17 @@ blockquote p {
     padding: 10px;
 }
 
-.justify-text {
-    text-align: justify;
-
-}
-
 .row {
     display: flex;
     align-items: center;
+}
 
+/* Helper classes */
+
+.bold {
+    font-weight: 900;
+}
+
+.justify-text {
+    text-align: justify;
 }
