@@ -55,10 +55,10 @@ p {
     margin-top: -30px;
 } */
 
-.tagline {
+#tagline {
     font-family: "Playfair Display", serif;
     color: rgba(255, 84, 106, 0.69);
-    font-size: 1.3em;
+    font-size: 0.8em;
 }
 
 #warning {
@@ -85,7 +85,7 @@ p {
 
 .section-heading {
     font-family: "Playfair Display", serif;
-    color: rgba(255, 84, 106, 0.69);
+    color: rgba(0, 0, 0, 1);
     font-size: 1.9em;
     margin-top: 20px;
 }
@@ -142,14 +142,23 @@ p {
 }
 
 .thirty-day-supply {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: arial;
     text-align: center;
 }
 
-blockquote {
+.quote-border-left {
     background: #f9f9f9;
     border-left: 10px solid rgba(255, 84, 106, 0.69);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+
+}
+
+.quote-border-right {
+    background: #f9f9f9;
+    border-right: 10px solid rgba(255, 84, 106, 0.69);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
 
@@ -179,6 +188,28 @@ blockquote:after {
 blockquote p {
     display: inline;
     font-size: 1.2em;
+
+}
+
+.resource {
+    margin-bottom: 30px;
+}
+
+.resource a {
+    text-decoration: none;
+}
+
+.resource h3 {
+    /* text-align: center; */
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.bi {
+    font-size: 1.4em;
+    color: rgba(255, 84, 106, 0.69);
+    margin-right: 10px;
 
 }
 
