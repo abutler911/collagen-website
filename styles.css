@@ -9,6 +9,7 @@ body {
 
 p {
     font-size: 1.2em;
+
 }
 
 .main {
@@ -57,7 +58,7 @@ p {
 
 #tagline {
     font-family: "Playfair Display", serif;
-    color: rgba(255, 84, 106, 0.69);
+    color: rgba(0, 0, 0, 1);
     font-size: 0.8em;
 }
 
@@ -220,4 +221,9 @@ blockquote p {
 #footer p {
     font-size: 0.8em;
     padding: 10px;
+}
+
+.justify-text {
+    text-align: justify;
+
 }
