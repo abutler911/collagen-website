@@ -61,6 +61,13 @@ p {
     margin-top: 60px;
 }
 
+#get-the-glow {
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 1);
+    font-size: 2em;
+    text-align: center;
+}
+
 /* #true-science-tagline {
     margin-top: -30px;
 } */
@@ -68,7 +75,7 @@ p {
 .tagline {
     font-family: "Playfair Display", serif;
     color: rgba(0, 0, 0, 1);
-    font-size: 0.8em;
+    font-size: 1.2em;
     text-align: center;
 }
 
