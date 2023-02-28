@@ -17,11 +17,50 @@ p {
     height: auto;
 }
 
-.main {
-    background-color: rgba(196, 196, 196, 0.5);
+/* Section styling */
 
+.main {
+    background-color: rgba(212, 212, 212, 0.2);
+    padding: 10px;
+}
+
+.featured-products {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.comparison {
+    background-color: rgba(212, 212, 212, 0.2);
+    padding: 10px;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.influencers {
+    background-color: rgba(212, 212, 212, 0.2);
+    padding: 10px;
+}
+
+.why {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.resource {
+    background-color: rgba(212, 212, 212, 0.2);
+    padding: 10px;
+}
+
+.footer {
+    background-color: #fff;
+    font-size: 0.8em;
+    padding: 10px;
 
 }
+
 
 #main-description {
     margin-bottom: 30px;
@@ -200,14 +239,7 @@ blockquote p {
     margin-right: 10px;
 }
 
-#footer {
-    background-color: rgba(196, 196, 196, 0.2);
-}
 
-#footer p {
-    font-size: 0.8em;
-    padding: 10px;
-}
 
 .testimonial-row {
     display: flex;
