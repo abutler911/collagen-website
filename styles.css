@@ -23,21 +23,7 @@ p {
 
 /* Section styling */
 
-.header {
-    background-image: url('./public/imgs/header-image-scaled.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10vh;
-    filter: blur(2px);
-}
 
-
-.header h1 {
-    color: #fff;
-    font-size: 5em;
-
-}
 
 .main {
     background-color: #fff;
@@ -87,7 +73,7 @@ p {
 }
 
 .main-image {
-    /* margin-top: 1em; */
+    margin-top: 2em;
 }
 
 .main-title h1 {
@@ -114,19 +100,23 @@ p {
 }
 
 .navbar {
-    background-color: rgba(255, 84, 106, 0.35);
+    background-color: rgba(255, 84, 106, 0.15);
     width: 100%;
     z-index: 9999;
-    /* position: absolute; */
-    /* position: absolute;
-    width: 100%;
-    z-index: 9999; */
+    position: absolute;
 }
 
 .nav-item {
     font-size: 1.3em;
     margin-right: 20px;
-    color: rgba(0, 0, 0, 1);
+
+    color: #fff;
+    font-weight: 800;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 0.9em;
     font-weight: 800;
 }
 
@@ -134,6 +124,8 @@ p {
     width: 240px;
     height: 90%;
 }
+
+
 
 #shop-now {
     font-size: 2em;
