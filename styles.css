@@ -5,6 +5,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+
+
 p {
     font-size: 1.2em;
 }
@@ -17,6 +19,7 @@ p {
 
 .main {
     background-color: rgba(196, 196, 196, 0.5);
+
 
 }
 
@@ -106,13 +109,27 @@ p {
     font-family: "Playfair Display", serif;
     color: rgba(255, 84, 106, 0.69);
     font-size: 1.6em;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .image {
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+    width: 100%;
 }
+
+.testimonial-image {
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 300px;
+    height: 300px;
+}
+
+/* #influencer-image {
+    height: 300px;
+    width: 300px;
+} */
 
 .free-trial-headline {
     color: rgba(255, 84, 106, 0.69);
@@ -192,7 +209,7 @@ blockquote p {
     padding: 10px;
 }
 
-.row {
+.testimonial-row {
     display: flex;
     align-items: center;
 }
