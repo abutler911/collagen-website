@@ -41,7 +41,6 @@ p {
 
 .testimonials {
     background-color: #fff;
-
     padding: 10px;
 }
 
@@ -172,11 +171,10 @@ p {
     width: 100%;
 }
 
-.testimonial-image {
+.before-after-image {
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* width: 300px;
-    height: 300px; */
+    border: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 .free-trial-headline {
@@ -207,6 +205,8 @@ p {
 
 blockquote {
     border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 blockquote:before {
