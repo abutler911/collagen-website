@@ -17,25 +17,31 @@ p {
     height: auto;
 }
 
+#health-icons {
+    display: flex;
+    height: 190px;
+    margin: 0 auto;
+}
+
 /* Section styling */
 
 .main {
-    background-color: rgba(212, 212, 212, 0.2);
+    background-color: #fff;
     padding: 10px;
 }
 
 .featured-products {
-    background-color: #fff;
-    padding: 10px;
-}
-
-.comparison {
     background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
 }
 
-.photo-gallery {
+.comparison {
     background-color: #fff;
+    padding: 10px;
+}
+
+.photo-gallery {
+    background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
 }
 
