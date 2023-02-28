@@ -74,6 +74,17 @@ p {
     margin-top: 4em;
 }
 
+.main-title h1 {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 400px) {
+    .main-title h1 {
+        font-size: 3em;
+
+    }
+}
+
 #main-description {
     margin-bottom: 30px;
 }
