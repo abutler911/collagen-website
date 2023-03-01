@@ -297,9 +297,10 @@ blockquote p {
 }
 
 #logo {
-    height: auto;
-    width: 120px;
-    margin-left: 5px;
+    height: 60px;
+
+    width: auto;
+    margin-left: 10px;
 
 }
 
