@@ -1,8 +1,36 @@
-body {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
     font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
 }
 
 p {
@@ -16,25 +44,16 @@ p {
 }
 
 #health-icons {
-    /* display: flex; */
+
     height: 100%;
     margin: 0 auto;
 }
 
 /* Section styling */
-
-
-
 .main {
     background-color: #fff;
     padding: 10px;
-
-
-
 }
-
-
-
 
 .featured-products {
     background-color: rgba(212, 212, 212, 0.2);
@@ -75,7 +94,6 @@ p {
     background-color: #fff;
     font-size: 0.8em;
     padding: 10px;
-
 }
 
 .main-image {
@@ -85,7 +103,6 @@ p {
 .main-title h1 {
     font-size: 3em;
 }
-
 
 #main-description {
     margin-bottom: 30px;
@@ -98,10 +115,6 @@ p {
 #main-button {
     width: 60%;
 }
-
-
-
-
 
 #shop-now {
     font-size: 2em;
@@ -222,8 +235,6 @@ blockquote:before {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-
-
 }
 
 blockquote:after {
@@ -260,8 +271,6 @@ blockquote p {
     margin-right: 10px;
 }
 
-
-
 .testimonial-row {
     display: flex;
     align-items: center;
@@ -289,7 +298,6 @@ blockquote p {
 .nav-item {
     font-size: 1.3em;
     margin-right: 20px;
-
     color: #fff;
     font-weight: 800;
 }
@@ -304,8 +312,6 @@ blockquote p {
     width: 240px;
     height: 90%;
 }
-
-
 
 @media screen and (max-width: 400px) {
     .main-title h1 {
