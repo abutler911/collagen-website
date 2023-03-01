@@ -12,6 +12,13 @@ const imageArray = [
   "./public/imgs/testimonials/testimonial11.jpg",
   "./public/imgs/testimonials/testimonial12.jpg",
   "./public/imgs/testimonials/testimonial13.jpg",
+  "./public/imgs/testimonials/testimonial14.jpg",
+  "./public/imgs/testimonials/testimonial15.png",
+  "./public/imgs/testimonials/testimonial16.jpg",
+  "./public/imgs/testimonials/testimonial17.png",
+  "./public/imgs/testimonials/testimonial18.png",
+  "./public/imgs/testimonials/testimonial19.jpg",
+  "./public/imgs/testimonials/testimonial20.jpg",
 ];
 
 const randomImage = document.querySelector("#random-image-button");
