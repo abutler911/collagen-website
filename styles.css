@@ -43,10 +43,12 @@ p {
     height: auto;
 }
 
-#health-icons {
-
+.icon-container {
     height: 60%;
     margin: 0 auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Section styling */
@@ -145,13 +147,6 @@ p {
     color: rgba(0, 0, 0, 1);
     font-size: 1.4em;
     text-align: center;
-}
-
-#warning {
-    width: 100%;
-    height: 100%;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
 }
 
 .btn {
