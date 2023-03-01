@@ -189,7 +189,6 @@ p {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100%;
     width: 100%;
-
 }
 
 .before-after-image {
@@ -314,6 +313,23 @@ blockquote p {
     width: 240px;
     height: 90%;
 }
+
+
+/* form styling */
+
+.form-control {
+    height: 3em;
+    background-color: rgba(255, 84, 106, 0.15);
+}
+
+.form-label {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-size: 1.3em;
+}
+
+
+
 
 @media screen and (max-width: 400px) {
     .main-title h1 {
