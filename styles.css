@@ -99,7 +99,7 @@ p {
 }
 
 .main-image {
-    margin-top: 2em;
+    margin-top: 3.5em;
 }
 
 .main-title h1 {
@@ -297,9 +297,9 @@ blockquote p {
 }
 
 #logo {
-    height: auto;
+    height: 70px;
 
-    width: 200px;
+    width: auto;
 
 
 }
