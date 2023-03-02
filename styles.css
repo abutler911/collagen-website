@@ -297,10 +297,10 @@ blockquote p {
 }
 
 #logo {
-    height: 60px;
+    height: auto;
 
-    width: auto;
-    margin-left: 10px;
+    width: 200px;
+
 
 }
 
