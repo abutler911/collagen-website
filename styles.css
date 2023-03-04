@@ -338,12 +338,23 @@ blockquote p {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 84, 106, 0.15);
+    font-family: 'Playfair Display', serif;
+}
+
+/* .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: arial;
     /* padding: 7px; */
-}
+/* } */
 
 .card img {
     border-radius: 5px;
@@ -360,7 +371,7 @@ blockquote p {
     font-size: 0.7em;
 }
 
-.price {
+*/ .price {
     color: grey;
     font-size: 22px;
 }
@@ -382,7 +393,7 @@ blockquote p {
     opacity: 0.7;
 } */
 
-#collagen-video-embed {
+.video-embed {
     min-width: 280px;
     min-height: 157px;
     border-radius: 5px;
