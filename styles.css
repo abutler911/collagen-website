@@ -410,3 +410,16 @@ blockquote p {
         margin-top: 30px;
     }
 }
+
+#quote {
+    font-size: 0.9em;
+    color: rgb(184, 184, 184);
+
+}
+
+#author {
+    text-align: right;
+    font-size: 0.7em;
+    color: rgb(184, 184, 184);
+
+}
