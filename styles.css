@@ -155,7 +155,7 @@ p {
     font-size: 1.3em;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -336,12 +336,56 @@ blockquote p {
     font-size: 1.3em;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    /* padding: 7px; */
+}
+
+.card img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+
+}
+
+.card h2 {
+    color: rgba(255, 84, 106, 0.7);
+}
+
+.card p {
+    font-size: 0.7em;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+/* .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgba(255, 84, 106, 0.6);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    height: 100%;
+} */
+
+.card button:hover {
+    opacity: 0.7;
+}
 
 
-
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     .main-title h1 {
         font-size: 3em;
 
     }
-}
+} */
