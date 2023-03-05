@@ -412,6 +412,7 @@ blockquote p {
 }
 
 #quote {
+    text-align: right;
     font-size: 0.9em;
     color: rgb(184, 184, 184);
 
