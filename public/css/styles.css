@@ -102,7 +102,7 @@ p {
     margin-top: 2em;
 }
 
-.main-title h1 {
+.main-title {
     font-size: 3em;
 }
 
@@ -418,5 +418,12 @@ blockquote p {
     text-align: right;
     font-size: 0.7em;
     color: rgb(184, 184, 184);
+}
 
+/* .row {
+    display: flex;
+} */
+
+.row .col-md-6 {
+    align-self: center;
 }
