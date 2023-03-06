@@ -101,3 +101,14 @@ getQuote().then((quote) => {
 //   imageGallery.innerHTML = "";
 //   imageGallery.appendChild(imageContainer);
 // });
+
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (scrollTop > 0) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
