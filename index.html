@@ -45,7 +45,7 @@
       href="./public/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
   </head>
 
   <body>
@@ -96,61 +96,56 @@
         </div>
       </nav>
     </header>
-    <div class="bgImage"></div>
-    <div class="content">
-      <section class="main" id="main">
-        <div class="container">
-          <div class="row testimonial-row">
-            <div class="col-md-6">
+
+    <section class="main" id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid main-image"
+              src="./public/imgs/1656028035_billboard-truescience-liquid-collagen-US-1-3741298075.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="col-md-6">
+            <b class="badge"> Activate. Replenish. Maintain. </b>
+            <div class="main-title">
+              <h1>True<span class="bold">Science</span>® Liquid Collagen</h1>
+            </div>
+            <div id="main-description" class="justify-text">
+              <p>
+                Get healthy, glowing skin with a delicious blend that activates,
+                replenishes, and maintains collagen to support firmness and
+                elasticity from within.*
+              </p>
+              <p>
+                For more information and to shop for products, click the button
+                below.
+              </p>
+            </div>
+            <div class="icon-container">
               <img
-                class="img-fluid main-image"
-                src="./public/imgs/1656028035_billboard-truescience-liquid-collagen-US-1-3741298075.webp"
+                class="img-fluid"
+                id="health-icons"
+                src="./public/imgs/icon-images/three-icons-cropped.png"
                 alt=""
               />
             </div>
-
-            <div class="col-md-6">
-              <b class="badge badge--featured">
-                Activate. Replenish. Maintain.
-              </b>
-              <div class="main-title">
-                <h1>True<span class="bold">Science</span>® Liquid Collagen</h1>
-              </div>
-
-              <div id="main-description" class="justify-text">
-                <p>
-                  Get healthy, glowing skin with a delicious blend that
-                  activates, replenishes, and maintains collagen to support
-                  firmness and elasticity from within.*
-                </p>
-                <p>
-                  For more information and to shop for products, click the
-                  button below.
-                </p>
-              </div>
-              <div class="icon-container">
-                <img
-                  class="img-fluid"
-                  id="health-icons"
-                  src="./public/imgs/icon-images/three-icons-cropped.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-center mt-5">
-                <a
-                  href="https://activatedglow.lifevantage.com/us-en/shop/truescience-liquid-collagen"
-                  ><button id="main-button" class="btn">Shop Now</button></a
-                >
-              </div>
-              <div>
-                <p class="text-center" id="quote"></p>
-                <p id="author"></p>
-              </div>
+            <div class="text-center mt-5">
+              <a
+                href="https://activatedglow.lifevantage.com/us-en/shop/truescience-liquid-collagen"
+                ><button id="main-button" class="btn">Shop Now</button></a
+              >
+            </div>
+            <div>
+              <p class="text-center" id="quote"></p>
+              <p id="author"></p>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="featured-products" id="featured-products">
       <div class="container">
@@ -166,7 +161,7 @@
             </h3>
             <div>
               <img
-                class="mb-4 product-image img-fluid"
+                class="mb-3 product-image img-fluid"
                 src="./public/imgs/collagen-bottle.jpg"
                 alt="bottle of activated liquid collagen product picture"
               />
@@ -211,7 +206,7 @@
             </h3>
             <div>
               <img
-                class="mb-4 product-image img-fluid"
+                class="mb-3 product-image img-fluid"
                 src="./public/imgs/collagen-nrf2.jpg"
                 alt="bottle of activated liquid collage and a bottle of NRF-2 side by side product picture"
               />
@@ -680,6 +675,7 @@
         </div>
       </div>
     </section>
+
     <section class="resource" id="resources">
       <div class="container">
         <div class="row">
