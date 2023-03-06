@@ -427,3 +427,13 @@ blockquote p {
 .row .col-md-6 {
     align-self: center;
 }
+
+.carousel-control-next-icon {
+    font-size: 100px;
+    color: #000;
+}
+
+.carousel-item img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
