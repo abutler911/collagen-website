@@ -437,3 +437,15 @@ blockquote p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
+
+.why-collagen-icons {
+    width: 80px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.why-icon-text {
+    font-size: 0.8em;
+}
