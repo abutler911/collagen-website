@@ -73,6 +73,10 @@ p {
     padding: 10px;
 }
 
+.ingredients {
+    background-image: radial-gradient(rgba(255, 84, 106, 0.2), rgba(255, 255, 255, 0.9));
+}
+
 .testimonials {
     background-color: #fff;
     padding: 10px;
@@ -453,6 +457,27 @@ header img {
     width: 100%;
 }
 
+.ingredients img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.ingredients-category-title {
+    color: rgba(255, 84, 106, 0.6);
+    font-size: 2.2em;
+}
+
+.ingredients-category-description {
+    padding: 12px;
+    font-size: 1.3em;
+}
+
+.ingredients-call-to-action {
+    margin-top: 20px;
+    font-size: 2.6em;
+    font-weight: 800;
+}
 
 @media screen and (max-width: 400px) {
     .main-title h1 {
@@ -469,6 +494,6 @@ header img {
     }
 
     .badge {
-        margin-top: 0;
+        margin-top: -40px;
     }
 }
