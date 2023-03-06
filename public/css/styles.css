@@ -294,12 +294,10 @@ blockquote p {
 }
 
 .navbar-toggler {
-    border: none;
+    margin-right: 7px;
 }
 
-.navbar-toggler-icon {
-    margin-right: 5px;
-}
+
 
 #logo {
     height: 40px;
@@ -317,9 +315,10 @@ blockquote p {
 }
 
 .nav-link {
-    color: #000;
+    color: #000000;
     font-size: 0.9em;
     font-weight: 800;
+    margin-left: 5px;
 }
 
 .navbar img {
