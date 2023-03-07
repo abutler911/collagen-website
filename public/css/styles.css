@@ -291,7 +291,7 @@ blockquote p {
 /*Navbar */
 
 .navbar {
-    background-color: rgba(255, 84, 106, 0.3);
+    background-color: rgba(255, 84, 106, 0.5);
     width: 100%;
     z-index: 9999;
     position: absolute;
