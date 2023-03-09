@@ -128,11 +128,30 @@ p {
 
 .main-image {
     margin-top: 2em;
+    animation: animateContent 3.5s ease backwards;
 }
 
 .main-title {
     font-size: 2.6em;
+    animation: animateContent 2s ease forwards;
+
 }
+
+@keyframes animateContent {
+    from {
+        opacity: 0;
+        transform: translate(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%);
+    }
+
+}
+
+
+
 
 #main-description {
     margin-bottom: 30px;
