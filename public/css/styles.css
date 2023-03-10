@@ -142,15 +142,26 @@ p {
 }
 
 .ingredients-image {
-    animation: wipe-enter .7s ease forwards;
+
     opacity: 0.7;
-    color: red;
+    /* position: fixed; */
+    /* make sure it stays put so we can see it! */
+
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
 }
 
 .ingredients-image:hover {
     /* transform: translateY(-10%); */
     transform: scale(110%);
     opacity: 1;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes wipe-enter {
@@ -186,8 +197,18 @@ p {
 
 }
 
+.social-icons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+}
 
+.social-icons i {
+    margin-left: 10px;
+    font-size: 1.9em;
+
+}
 
 #main-description {
     margin-bottom: 30px;
