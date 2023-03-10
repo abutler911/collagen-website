@@ -128,13 +128,49 @@ p {
 
 .main-image {
     margin-top: 2em;
-    animation: animateContent 3.5s ease backwards;
+    animation: animateContent .5s ease backwards;
 }
 
 .main-title {
     font-size: 2.6em;
-    animation: animateContent 2s ease forwards;
+    animation: animateContent 1s ease forwards;
 
+}
+
+#health-icons {
+    animation: fadeIn 1s ease forwards;
+}
+
+.ingredients-image {
+    animation: wipe-enter .7s ease forwards;
+    opacity: 0.7;
+    color: red;
+}
+
+.ingredients-image:hover {
+    /* transform: translateY(-10%); */
+    transform: scale(110%);
+    opacity: 1;
+}
+
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, .025);
+    }
+
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes animateContent {
@@ -180,7 +216,28 @@ p {
     border-radius: 5px;
     border: 1px solid rgba(255, 84, 106, 0.1);
     box-shadow: rgba(255, 84, 106, 0.1) 0px 5px 15px;
+
 }
+
+/* #collagen-bottle-image {
+    visibility: hidden;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
 
 #get-the-glow {
     font-family: "Playfair Display", serif;

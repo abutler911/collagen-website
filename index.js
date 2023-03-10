@@ -102,13 +102,27 @@ getQuote().then((quote) => {
 //   imageGallery.appendChild(imageContainer);
 // });
 
-window.addEventListener("scroll", function () {
-  var navbar = document.getElementById("navbar");
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+// window.addEventListener("scroll", function () {
+//   var navbar = document.getElementById("navbar");
+//   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-  if (scrollTop > 0) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-});
+//   if (scrollTop > 0) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// });
+
+// window.onscroll = function () {
+//   myFunction();
+// };
+
+// function myFunction() {
+//   if (
+//     document.body.scrollTop > 100 ||
+//     document.documentElement.scrollTop > 100
+//   ) {
+//     const element = document.querySelector("#collagen-bottle-image");
+//     element.classList.add("slideUp");
+//   }
+// }
