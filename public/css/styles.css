@@ -129,10 +129,18 @@ p {
 .main-image {
     margin-top: 2em;
     animation: animateContent .5s ease backwards;
-
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-
+.main-image-slogan {
+    width: 15%;
+    position: absolute;
+    top: 370px;
+    left: 150px;
+    animation: rotate 9s infinite linear forwards;
+}
 
 .main-title {
     font-size: 2.5em;
@@ -686,5 +694,13 @@ header img {
 
     .badge {
         margin-top: -40px;
+    }
+
+    .main-image-slogan {
+        width: 30%;
+        position: absolute;
+        top: 470px;
+        left: 220px;
+        animation: rotate 9s infinite linear forwards;
     }
 }
