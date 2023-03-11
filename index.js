@@ -126,16 +126,3 @@ getQuote().then((quote) => {
 //     element.classList.add("slideUp");
 //   }
 // }
-
-window.addEventListener(
-  "scroll",
-  () => {
-    document.body.style.setProperty(
-      "--scroll",
-      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-    );
-  },
-  false
-);
-
-console.log(--scroll);
