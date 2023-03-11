@@ -129,10 +129,13 @@ p {
 .main-image {
     margin-top: 2em;
     animation: animateContent .5s ease backwards;
+
 }
 
+
+
 .main-title {
-    font-size: 2.6em;
+    font-size: 1.8em;
     animation: animateContent 1s ease forwards;
 
 }
@@ -445,9 +448,9 @@ blockquote p {
 
 .nav-link {
     color: #000000;
-    font-size: 0.9em;
+    font-size: 0.5em;
     font-weight: 800;
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
 .navbar img {
