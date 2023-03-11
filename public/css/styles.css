@@ -238,8 +238,7 @@ p {
     font-weight: 600;
     border: 2px solid rgba(255, 84, 106, 0.2);
     border-radius: 5px;
-    animation: bouncy 5s infinite linear;
-    position: relative;
+
 }
 
 #main-button:hover {
@@ -256,8 +255,7 @@ p {
     font-weight: 600;
     margin-bottom: 20px;
     border-radius: 5px;
-    animation: bouncy 7s infinite linear;
-    position: relative;
+
 }
 
 #consultant-button:hover {
