@@ -128,43 +128,19 @@ p {
 
 .main-image {
     margin-top: 2em;
-    /* animation: animateContent .5s ease backwards; */
     position: relative;
     top: 0;
     left: 0;
 }
 
-.main-image-slogan {
-    width: 15%;
-    position: absolute;
-    top: 370px;
-    left: 150px;
-    animation: rotate 9s infinite linear forwards;
-}
 
 .main-title {
     font-size: 2.5em;
-    /* animation: animateContent 1s ease forwards; */
-
 }
 
 #health-icons {
     animation: fadeIn 1s ease forwards;
 }
-
-
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
-
-
 
 .social-icons {
     align-items: center;
@@ -223,38 +199,6 @@ p {
     color: #fff;
 }
 
-@keyframes bouncy {
-    0% {
-        top: 0em
-    }
-
-    40% {
-        top: 0em
-    }
-
-    43% {
-        top: -0.9em
-    }
-
-    46% {
-        top: 0em
-    }
-
-    48% {
-        top: -0.4em
-    }
-
-    50% {
-        top: 0em
-    }
-
-    100% {
-        top: 0em;
-    }
-}
-
-
-
 #shop-now {
     font-size: 2em;
     font-weight: 800;
@@ -272,26 +216,6 @@ p {
     box-shadow: rgba(255, 84, 106, 0.1) 0px 5px 15px;
 
 }
-
-/* #collagen-bottle-image {
-    visibility: hidden;
-}
-
-.slideUp {
-    animation-name: slideUp;
-    animation-duration: 1s;
-    visibility: visible;
-}
-
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} */
 
 #get-the-glow {
     font-family: "Playfair Display", serif;
@@ -316,8 +240,6 @@ p {
     width: 100%;
     margin-bottom: 20px;
 }
-
-
 
 .btn:hover {
     background-color: rgba(255, 84, 106, 0.9);
@@ -450,25 +372,17 @@ blockquote p {
     width: 100%;
     z-index: 9999;
     position: absolute;
-
     transition: background-color 0.3s ease-in-out;
-
 }
-
-
 
 .navbar-toggler {
     margin-right: 7px;
 }
 
-
-
 #logo {
     height: 40px;
     width: auto;
     margin-left: 20px;
-
-
 }
 
 .nav-item {
@@ -489,7 +403,6 @@ blockquote p {
     width: 240px;
     height: 90%;
 }
-
 
 /* form styling */
 
@@ -515,20 +428,10 @@ blockquote p {
     font-family: 'Playfair Display', serif;
 }
 
-/* .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    /* padding: 7px; */
-/* } */
-
 .card img {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
-
 }
 
 .card h2 {
@@ -544,23 +447,6 @@ blockquote p {
     font-size: 22px;
 }
 
-/* .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgba(255, 84, 106, 0.6);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    height: 100%;
-} */
-
-/* .card button:hover {
-    opacity: 0.7;
-} */
-
 .video-embed {
     min-width: 280px;
     min-height: 157px;
@@ -568,13 +454,10 @@ blockquote p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
 #quote {
     text-align: right;
     font-size: 0.9em;
     color: rgb(184, 184, 184);
-
 }
 
 #author {
@@ -582,22 +465,6 @@ blockquote p {
     font-size: 0.7em;
     color: rgb(184, 184, 184);
 }
-
-/* .row {
-    display: flex;
-} */
-
-
-
-/* .carousel-control-next-icon {
-    font-size: 100px;
-    color: #000;
-}
-
-.carousel-item img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-} */
 
 .why-collagen-icons {
     width: 80px;
