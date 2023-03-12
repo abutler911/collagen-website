@@ -128,7 +128,7 @@ p {
 
 .main-image {
     margin-top: 2em;
-    animation: animateContent .5s ease backwards;
+    /* animation: animateContent .5s ease backwards; */
     position: relative;
     top: 0;
     left: 0;
@@ -144,7 +144,7 @@ p {
 
 .main-title {
     font-size: 2.5em;
-    animation: animateContent 1s ease forwards;
+    /* animation: animateContent 1s ease forwards; */
 
 }
 
@@ -152,22 +152,7 @@ p {
     animation: fadeIn 1s ease forwards;
 }
 
-.ingredients-image {
 
-    opacity: 0.7;
-    /* position: fixed; */
-    /* make sure it stays put so we can see it! */
-
-    animation: rotate 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-}
-
-.ingredients-image:hover {
-    /* transform: translateY(-10%); */
-    transform: scale(110%);
-    opacity: 1;
-}
 
 @keyframes rotate {
     to {
@@ -175,38 +160,11 @@ p {
     }
 }
 
-@keyframes wipe-enter {
-    0% {
-        transform: scale(0, .025);
-    }
 
-    50% {
-        transform: scale(1, .025);
-    }
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes animateContent {
-    from {
-        opacity: 0;
-        transform: translate(-50%);
-    }
 
-    to {
-        opacity: 1;
-        transform: translate(0%);
-    }
-
-}
 
 .social-icons {
     align-items: center;

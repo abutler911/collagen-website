@@ -1,5 +1,6 @@
 const quoteContainer = document.querySelector("#quote");
 const author = document.querySelector("#author");
+
 // const quoteButton = document.querySelector("#quote-btn");
 let url = "https://type.fit/api/quotes";
 
@@ -28,6 +29,8 @@ getQuote().then((quote) => {
   }
   author.innerHTML = `- ${quote.author}`;
 });
+
+AOS.init();
 
 // const imageArray = [
 //   "./public/imgs/testimonials/testimonial1.jpg",
