@@ -402,8 +402,7 @@ blockquote p {
 
 .nav-link:hover {
     color: rgba(255, 84, 106, 0.9);
-    scale: 110%;
-    transition: .3s;
+    transition: .2s;
 }
 
 .navbar img {
