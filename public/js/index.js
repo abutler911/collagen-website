@@ -201,4 +201,21 @@ function selectRandomItems(arr, numItems) {
   return result;
 }
 
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Key": "4799f1a6b5msh2524eb4f30aaee4p118153jsn4bba6da3d36e",
+//     "X-RapidAPI-Host":
+//       "quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com",
+//   },
+// };
+
+// fetch(
+//   "https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info",
+//   options
+// )
+//   .then((response) => console.log(response.json()))
+//   .then((response) => console.log(response))
+//   .catch((err) => console.error(err));
+
 AOS.init();
