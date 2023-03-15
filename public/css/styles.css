@@ -14,6 +14,7 @@ body {
     font-family: 'Playfair Display', serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-size: 1.3em;
 }
 
 img, picture, video, canvas, svg {
@@ -76,18 +77,15 @@ p {
 .main {
     background-color: #ffffff;
     padding: 10px;
-    min-height: 100vh;
 }
 
 .ingredients {
     background-image: radial-gradient(rgba(255, 84, 106, 0.2), rgba(255, 255, 255, 1));
-    min-height: 100vh;
 }
 
 .featured-products {
     background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
-    min-height: 100vh
 }
 
 .comparison {
@@ -98,32 +96,25 @@ p {
 .photo-gallery {
     background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
-    min-height: 100vh;
 }
 
 .testimonials {
     background-image: radial-gradient(rgba(255, 84, 106, 0.2), rgba(255, 255, 255, 1));
-
-    /* padding: 10px; */
-    min-height: 100vh;
 }
 
 .influencers {
     background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
-    min-height: 100vh;
 }
 
 .why {
     background-color: #fff;
     padding: 10px;
-    min-height: 100vh;
 }
 
 .resource {
     background-color: rgba(212, 212, 212, 0.2);
     padding: 10px;
-
 }
 
 .footer {
@@ -139,7 +130,6 @@ p {
     left: 0;
 }
 
-
 .main-title {
     font-size: 2.5em;
 }
@@ -152,13 +142,11 @@ p {
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .social-icons i {
     margin-left: 10px;
     font-size: 1.9em;
-
 }
 
 #main-description {
@@ -173,15 +161,17 @@ p {
     background-color: rgba(255, 84, 106, 0.50);
     width: 80%;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     border: none;
     font-weight: 600;
     border: 2px solid rgba(255, 84, 106, 0.2);
-    border-radius: 7px;
     height: 3em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
 #main-button:hover {
@@ -194,13 +184,16 @@ p {
     background-color: #fff;
     border: 2px solid rgba(255, 84, 106, 0.2);
     width: 80%;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 20px;
     border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
     height: 3em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
 
 #consultant-button:hover {
@@ -211,7 +204,7 @@ p {
 }
 
 #shop-now {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 800;
     color: rgba(255, 84, 106, 0.69);
     outline: black;
@@ -222,10 +215,13 @@ p {
 }
 
 .product-image {
-    border-radius: 5px;
     border: 1px solid rgba(255, 84, 106, 0.1);
     box-shadow: rgba(255, 84, 106, 0.1) 0px 5px 15px;
-
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #get-the-glow {
