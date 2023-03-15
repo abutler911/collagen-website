@@ -136,8 +136,8 @@ const getQuote = async function () {
 
 getQuote().then((quote) => {
   quoteContainer.innerHTML = quote.text;
-  if (!author) {
-    author.innerHTML = `-- Anonymous`;
+  if (quote.author == null) {
+    return (author.innerHTML = `- Anonymous`);
   }
   author.innerHTML = `- ${quote.author}`;
 });
