@@ -118,6 +118,7 @@ const author = document.querySelector("#author");
 const url = "https://type.fit/api/quotes";
 const photoGallery = document.querySelector("#photo-gallery");
 const testimonialSection = document.querySelector("#testimonials");
+
 const numberOfPhotos = 16;
 const randomPhotos = selectRandomItems(photos, numberOfPhotos);
 const numberOfTestimonials = 5;
@@ -125,6 +126,8 @@ const randomTestimonials = selectRandomItems(
   testimonials,
   numberOfTestimonials
 );
+
+// Random quote generator for the front page
 
 const getQuote = async function () {
   const randomNumber = Math.floor(Math.random() * 1000);
@@ -142,6 +145,8 @@ getQuote().then((quote) => {
   author.innerHTML = `- ${quote.author}`;
 });
 
+// Random before and after photo selection for the photo gallery section
+
 for (i = 0; i < randomPhotos.length; i++) {
   const element = document.createElement("div");
   element.setAttribute("class", "col-md-4 mt-3 col-lg-3");
@@ -157,6 +162,7 @@ for (i = 0; i < randomPhotos.length; i++) {
   photoGallery.appendChild(element);
 }
 
+// random testimonial selection for the testimonial section
 for (i = 0; i < randomTestimonials.length; i++) {
   const element = document.createElement("div");
   element.setAttribute("class", "col-md-4");
@@ -201,21 +207,5 @@ function selectRandomItems(arr, numItems) {
   return result;
 }
 
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "4799f1a6b5msh2524eb4f30aaee4p118153jsn4bba6da3d36e",
-//     "X-RapidAPI-Host":
-//       "quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com",
-//   },
-// };
-
-// fetch(
-//   "https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info",
-//   options
-// )
-//   .then((response) => console.log(response.json()))
-//   .then((response) => console.log(response))
-//   .catch((err) => console.error(err));
-
+// initialization of the animation on scroll functionality
 AOS.init();
