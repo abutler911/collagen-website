@@ -121,7 +121,7 @@ const testimonialSection = document.querySelector("#testimonials");
 
 const numberOfPhotos = 16;
 const randomPhotos = selectRandomItems(photos, numberOfPhotos);
-const numberOfTestimonials = 5;
+const numberOfTestimonials = 6;
 const randomTestimonials = selectRandomItems(
   testimonials,
   numberOfTestimonials
