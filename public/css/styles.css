@@ -543,3 +543,34 @@ header img {
         animation: rotate 9s infinite linear forwards;
     }
 }
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    text-align: center;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    opacity: 60%;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#backToTopBtn i {
+    color: rgba(255, 84, 106, 1);
+}
+
+#backToTopBtn i:hover {
+    color: #000;
+}

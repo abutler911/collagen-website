@@ -207,5 +207,22 @@ function selectRandomItems(arr, numItems) {
   return result;
 }
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function toggleBackToTopButton() {
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+window.onscroll = function () {
+  toggleBackToTopButton();
+};
+
 // initialization of the animation on scroll functionality
 AOS.init();
