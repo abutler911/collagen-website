@@ -738,6 +738,20 @@ select {
   margin-inline: auto;
 }
 
+.footer-credit {
+  color: #cbbdc1;
+  font-size: 0.85rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.footer-credit .bi-heart-fill {
+  color: #e63950;
+  font-size: 0.8rem;
+  margin-inline: 0.15rem;
+  vertical-align: -0.05em;
+}
+
 /* ---------------- Back to top ---------------- */
 
 #backToTopBtn {

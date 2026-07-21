@@ -197,9 +197,14 @@ if (statNumbers.length && "IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
   );
   statNumbers.forEach((el) => statObserver.observe(el));
+} else {
+  // Fallback: no IntersectionObserver — show final values immediately.
+  statNumbers.forEach((el) => {
+    el.textContent = (el.dataset.count || "0") + (el.dataset.suffix || "");
+  });
 }
 
 // Before/after comparison slider
