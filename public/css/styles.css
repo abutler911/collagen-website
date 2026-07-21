@@ -530,11 +530,6 @@ select {
   border: 0;
 }
 
-.comparison-chart {
-  border-radius: 8px;
-  cursor: zoom-in;
-}
-
 /* ---------------- Gallery ---------------- */
 
 .gallery-thumb {
@@ -598,31 +593,93 @@ select {
 
 /* ---------------- Testimonials ---------------- */
 
+.testimonial-carousel {
+  max-width: 880px;
+  margin: 0 auto;
+  padding-inline: 3.2rem;
+}
+
 .testimonial-card {
   background-color: var(--surface);
   border-radius: var(--radius);
-  border: 1px solid rgba(128, 128, 128, 0.15);
-  border-left: 5px solid var(--brand);
+  border: 1px solid rgba(128, 128, 128, 0.12);
   box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-  height: 100%;
-  margin: 0;
+  padding: 2.5rem 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.testimonial-card::before {
-  content: "\201C";
-  display: block;
+.testimonial-stars {
+  display: inline-block;
+  color: #f5b301;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  margin: 0 0 1.1rem;
+}
+
+.testimonial-quote p {
   font-family: var(--font-heading);
-  font-size: 2.6rem;
-  line-height: 0.6;
-  color: var(--brand);
-  margin-bottom: 0.75rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
 }
 
-.testimonial-card p {
-  font-size: 0.98rem;
-  color: var(--ink-soft);
-  margin: 0;
+.testimonial-author {
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--brand-dark);
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.2s ease;
+}
+
+.testimonial-carousel .carousel-control-prev:hover,
+.testimonial-carousel .carousel-control-next:hover {
+  background-color: var(--brand-darker);
+}
+
+.testimonial-carousel .carousel-control-prev {
+  left: 0;
+}
+
+.testimonial-carousel .carousel-control-next {
+  right: 0;
+}
+
+.testimonial-carousel .carousel-control-prev-icon,
+.testimonial-carousel .carousel-control-next-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+@media (max-width: 575.98px) {
+  .testimonial-carousel {
+    padding-inline: 2.4rem;
+  }
+  .testimonial-card {
+    padding: 2rem 1.25rem;
+  }
+  .testimonial-quote p {
+    font-size: 1.08rem;
+  }
 }
 
 .customer-posts-heading {
@@ -634,6 +691,206 @@ select {
 .customer-post-thumb {
   height: 280px;
   object-fit: cover;
+}
+
+/* ---------------- Trust bar ---------------- */
+
+.trust-bar {
+  background-color: var(--surface);
+  border-top: 1px solid rgba(201, 24, 74, 0.1);
+  border-bottom: 1px solid rgba(201, 24, 74, 0.1);
+  padding: 1.1rem 0;
+}
+
+.trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.trust-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.trust-list i {
+  color: var(--brand-dark);
+  font-size: 1.1rem;
+}
+
+/* ---------------- Comparison table ---------------- */
+
+.compare-table-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  min-width: 460px;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+  vertical-align: middle;
+}
+
+.compare-table thead th {
+  background-color: var(--surface-alt);
+  font-family: var(--font-body);
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.compare-table thead .compare-us {
+  background: linear-gradient(160deg, var(--brand-tint), #fff);
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.compare-table thead th span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.compare-table thead .compare-us span {
+  color: var(--brand-dark);
+  opacity: 0.85;
+}
+
+.compare-table tbody th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.compare-table tbody td {
+  text-align: center;
+  width: 22%;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.compare-table td.yes {
+  color: #1a8f5a;
+  background-color: rgba(26, 143, 90, 0.05);
+}
+
+.compare-table td.yes i {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.compare-table td.no i {
+  color: #c0392b;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-note {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 1rem;
+}
+
+/* ---------------- What-to-expect timeline ---------------- */
+
+.timeline {
+  background: linear-gradient(180deg, #ffffff 0%, var(--brand-tint) 100%);
+}
+
+.timeline-intro {
+  color: var(--ink-soft);
+  max-width: 40em;
+  margin: -1rem auto 2.5rem;
+}
+
+.timeline-row {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .timeline-row::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 16%;
+    width: 68%;
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      var(--brand-tint-strong),
+      var(--brand),
+      var(--brand-tint-strong)
+    );
+    z-index: 0;
+  }
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 0.75rem;
+}
+
+.timeline-week {
+  display: inline-block;
+  background-color: var(--brand-dark);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35em 1em;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.timeline-step > i {
+  display: block;
+  font-size: 2.2rem;
+  color: var(--brand-dark);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-step h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-step p {
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  max-width: 24em;
+  margin: 0 auto;
 }
 
 /* ---------------- FAQ ---------------- */
