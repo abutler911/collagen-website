@@ -193,22 +193,27 @@
     </nav>
 
     <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2 text-center" data-aos="fade-up">
-            <img
-              class="hero-bottle"
-              src="./public/imgs/collagen-bottle.webp"
-              alt="Bottle of TrueScience Activated Liquid Collagen"
-              width="700"
-              height="700"
-              fetchpriority="high"
-            />
+            <div class="hero-bottle-stage">
+              <span class="hero-bottle-halo" aria-hidden="true"></span>
+              <img
+                class="hero-bottle"
+                src="./public/imgs/collagen-bottle.webp"
+                alt="Bottle of TrueScience Activated Liquid Collagen"
+                width="700"
+                height="700"
+                fetchpriority="high"
+              />
+            </div>
           </div>
           <div class="col-lg-6 order-lg-1" data-aos="fade-up">
             <span class="hero-badge">Activate&nbsp;&middot;&nbsp;Replenish&nbsp;&middot;&nbsp;Maintain</span>
             <h1 class="hero-title">
-              True<span class="accent">Science</span>&reg;<br />Liquid Collagen
+              True<span class="accent">Science</span>&reg;<br />Liquid
+              <span class="hero-title-glow">Collagen</span>
             </h1>
             <p class="hero-lead">
               Get healthy, glowing skin with a delicious blend that activates,
@@ -239,6 +244,67 @@
           </div>
         </div>
       </div>
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path
+            d="M0,40 C240,90 480,90 720,55 C960,20 1200,20 1440,50 L1440,90 L0,90 Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="how-to" aria-label="How to use">
+      <div class="container">
+        <div class="row g-4 text-center how-to-row">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="how-to-step">
+              <span class="how-to-num">1</span>
+              <i class="bi bi-droplet-half"></i>
+              <h3>Shake</h3>
+              <p>Give the bottle a quick shake to activate the blend.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="how-to-step">
+              <span class="how-to-num">2</span>
+              <i class="bi bi-cup-straw"></i>
+              <h3>Drink</h3>
+              <p>Sip one delicious 50&nbsp;ml bottle daily — no mixing.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="how-to-step">
+              <span class="how-to-num">3</span>
+              <i class="bi bi-stars"></i>
+              <h3>Glow</h3>
+              <p>See visible support for your skin in 8 weeks or less.*</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="By the numbers">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3">
+            <p class="stat-number" data-count="8" data-suffix="wk">0</p>
+            <p class="stat-label">To visible results*</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p class="stat-number" data-count="10" data-suffix="">0</p>
+            <p class="stat-label">Types of collagen</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p class="stat-number" data-count="35" data-suffix="%">0</p>
+            <p class="stat-label">Of your body's protein</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p class="stat-number" data-count="30" data-suffix="day">0</p>
+            <p class="stat-label">Money-back guarantee</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ingredients section" id="ingredients">
@@ -249,7 +315,7 @@
         <hr class="section-rule" />
         <div class="row g-4">
           <div class="col-md-6 col-lg-3" data-aos="fade-up">
-            <div class="ingredient-card">
+            <div class="ingredient-card accent-ruby">
               <img
                 class="ingredients-image"
                 src="./public/imgs/icon_Formosa-Ruby-Quinoa-Extract.png"
@@ -268,7 +334,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="ingredient-card">
+            <div class="ingredient-card accent-marine">
               <img
                 class="ingredients-image"
                 src="./public/imgs/icon_Marine-Collagen.png"
@@ -287,7 +353,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="ingredient-card">
+            <div class="ingredient-card accent-berry">
               <img
                 class="ingredients-image"
                 src="./public/imgs/icon_Berry-and-Citrus-Extract.png"
@@ -306,7 +372,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="ingredient-card">
+            <div class="ingredient-card accent-citrus">
               <img
                 class="ingredients-image"
                 src="./public/imgs/icon_Young-Ponkan-Fruit.png"
@@ -490,6 +556,44 @@
       <div class="container">
         <h2 class="text-center section-heading">Before &amp; After Photos</h2>
         <hr class="section-rule" />
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-7 col-md-9" data-aos="fade-up">
+            <div
+              class="ba-slider"
+              id="baSlider"
+              role="slider"
+              tabindex="0"
+              aria-label="Before and after comparison. Use arrow keys to reveal."
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="50"
+            >
+              <img
+                class="ba-img ba-after"
+                src="./public/imgs/gallery/ba-after.webp"
+                alt="Customer's skin after using Activated Liquid Collagen"
+                draggable="false"
+              />
+              <div class="ba-before-wrap">
+                <img
+                  class="ba-img ba-before"
+                  src="./public/imgs/gallery/ba-before.webp"
+                  alt="Customer's skin before using Activated Liquid Collagen"
+                  draggable="false"
+                />
+              </div>
+              <span class="ba-label ba-label-before">Before</span>
+              <span class="ba-label ba-label-after">After</span>
+              <div class="ba-handle" aria-hidden="true">
+                <i class="bi bi-chevron-left"></i>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </div>
+            <p class="ba-caption text-center">
+              Drag the slider &mdash; real customer, Day 0 vs. Day 30.*
+            </p>
+          </div>
+        </div>
         <div class="row g-3" id="photo-gallery-grid"></div>
         <p class="results-disclaimer text-center">
           Individual results shared by real customers. Results may vary and are
@@ -1059,6 +1163,20 @@
         </p>
       </div>
     </footer>
+
+    <div class="mobile-cta" aria-label="Shop">
+      <div class="mobile-cta-text">
+        <span class="mobile-cta-name">Liquid Collagen</span>
+        <span class="mobile-cta-sub">30-day money-back guarantee</span>
+      </div>
+      <a
+        class="btn btn-brand"
+        href="https://activatedglow.lifevantage.com/us-en/shop/categories/collagen"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Shop Now</a
+      >
+    </div>
 
     <button onclick="scrollToTop()" id="backToTopBtn" title="Back to top" aria-label="Back to top">
       <i class="bi bi-arrow-up-square"></i>
