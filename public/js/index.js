@@ -83,20 +83,24 @@ if (photoGallery) {
   });
 }
 
-// Testimonial cards
-const testimonialGrid = document.querySelector("#testimonial-grid");
-if (testimonialGrid) {
-  const randomTestimonials = selectRandomItems(testimonials, 6);
-  randomTestimonials.forEach((text) => {
-    const col = document.createElement("div");
-    col.className = "col-md-6 col-lg-4";
-    const card = document.createElement("blockquote");
+// Testimonial carousel — one review per slide, with a 5-star rating
+const testimonialTrack = document.querySelector("#testimonial-track");
+if (testimonialTrack) {
+  const stars = '<span class="testimonial-stars" aria-label="5 out of 5 stars">'
+    + '<i class="bi bi-star-fill"></i>'.repeat(5)
+    + "</span>";
+  const randomTestimonials = selectRandomItems(testimonials, 8);
+  randomTestimonials.forEach((text, index) => {
+    const item = document.createElement("div");
+    item.className = "carousel-item" + (index === 0 ? " active" : "");
+    const card = document.createElement("figure");
     card.className = "testimonial-card";
-    const quoteText = document.createElement("p");
-    quoteText.innerHTML = text;
-    card.appendChild(quoteText);
-    col.appendChild(card);
-    testimonialGrid.appendChild(col);
+    card.innerHTML =
+      stars +
+      `<blockquote class="testimonial-quote"><p>${text}</p></blockquote>` +
+      '<figcaption class="testimonial-author">Verified Customer</figcaption>';
+    item.appendChild(card);
+    testimonialTrack.appendChild(item);
   });
 }
 
