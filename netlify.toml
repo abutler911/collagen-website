@@ -6,7 +6,7 @@
   to = "/success.html"
   status = 200
 
-# Long-lived caching for static assets (HTML stays revalidated by default).
+# Images have stable, unique filenames, so they can be cached for a long time.
 [[headers]]
   for = "/public/imgs/*"
   [headers.values]
@@ -17,12 +17,15 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+# CSS/JS change with every deploy, so always revalidate before use. Netlify
+# serves ETags, so unchanged files return a fast 304 rather than re-downloading.
+# This prevents visitors from being served a stale stylesheet or script.
 [[headers]]
   for = "/public/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/public/js/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
