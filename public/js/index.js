@@ -172,6 +172,76 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+// Count-up stat numbers when the stats band scrolls into view
+const statNumbers = document.querySelectorAll(".stat-number");
+if (statNumbers.length && "IntersectionObserver" in window) {
+  const runCount = (el) => {
+    const target = parseInt(el.dataset.count, 10) || 0;
+    const suffix = el.dataset.suffix || "";
+    const duration = 1400;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const statObserver = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          runCount(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+  statNumbers.forEach((el) => statObserver.observe(el));
+}
+
+// Before/after comparison slider
+const baSlider = document.getElementById("baSlider");
+if (baSlider) {
+  const beforeWrap = baSlider.querySelector(".ba-before-wrap");
+  const handle = baSlider.querySelector(".ba-handle");
+  const setPosition = (percent) => {
+    const clamped = Math.max(0, Math.min(100, percent));
+    beforeWrap.style.width = clamped + "%";
+    handle.style.left = clamped + "%";
+    baSlider.setAttribute("aria-valuenow", Math.round(clamped));
+  };
+  const positionFromEvent = (event) => {
+    const rect = baSlider.getBoundingClientRect();
+    const x = (event.touches ? event.touches[0].clientX : event.clientX) - rect.left;
+    setPosition((x / rect.width) * 100);
+  };
+  let dragging = false;
+  const startDrag = (e) => {
+    dragging = true;
+    positionFromEvent(e);
+  };
+  const onMove = (e) => {
+    if (dragging) positionFromEvent(e);
+  };
+  const endDrag = () => {
+    dragging = false;
+  };
+  baSlider.addEventListener("mousedown", startDrag);
+  window.addEventListener("mousemove", onMove);
+  window.addEventListener("mouseup", endDrag);
+  baSlider.addEventListener("touchstart", startDrag, { passive: true });
+  baSlider.addEventListener("touchmove", onMove, { passive: true });
+  baSlider.addEventListener("touchend", endDrag);
+  baSlider.addEventListener("keydown", (e) => {
+    const current = parseFloat(baSlider.getAttribute("aria-valuenow")) || 50;
+    if (e.key === "ArrowLeft") setPosition(current - 5);
+    if (e.key === "ArrowRight") setPosition(current + 5);
+  });
+}
+
 // Animate-on-scroll
 if (typeof AOS !== "undefined") {
   AOS.init({ duration: 700, once: true, offset: 80 });
