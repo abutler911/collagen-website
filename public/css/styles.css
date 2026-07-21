@@ -75,9 +75,66 @@ select {
   padding-bottom: 0.5rem;
 }
 
-#logo {
-  height: 44px;
-  width: auto;
+/* Text wordmark logo */
+.brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  text-decoration: none;
+  font-size: 1.55rem;
+  line-height: 1;
+  padding-block: 0.1rem;
+}
+
+.brand-activated {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.005em;
+}
+
+.brand-glow {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(95deg, var(--brand) 0%, var(--brand-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.brand-spark {
+  align-self: flex-start;
+  font-size: 0.62em;
+  color: var(--brand);
+  margin-left: -0.12rem;
+  text-shadow: 0 0 10px rgba(255, 84, 106, 0.55);
+  animation: sparkTwinkle 3.5s ease-in-out infinite;
+}
+
+@keyframes sparkTwinkle {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-wordmark {
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-spark {
+    animation: none;
+  }
 }
 
 .site-navbar .nav-link {
