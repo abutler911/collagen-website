@@ -1,9 +1,19 @@
-// Optimized customer photos live in public/imgs/gallery as gallery-01.webp … gallery-97.webp
-const GALLERY_PHOTO_COUNT = 97;
-const photos = Array.from({ length: GALLERY_PHOTO_COUNT }, (_, i) => {
-  const n = String(i + 1).padStart(2, "0");
-  return `./public/imgs/gallery/gallery-${n}.webp`;
-});
+// Optimized customer photos live in public/imgs/gallery as gallery-NN.webp.
+// They are curated into genuine before/after photos and screenshots of
+// customer posts (shown with the written testimonials instead).
+const galleryPath = (n) =>
+  `./public/imgs/gallery/gallery-${String(n).padStart(2, "0")}.webp`;
+
+const beforeAfterPhotos = [
+  3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25,
+  26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 42, 43, 44,
+  45, 46, 48, 50, 52, 54, 60, 62, 63, 64, 65, 66, 67, 68, 70, 71, 72, 75,
+  76, 77, 78, 80, 82, 83, 84, 85, 86, 90, 91, 92, 93, 94, 95, 96,
+].map(galleryPath);
+
+const customerPosts = [1, 2, 16, 22, 24, 40, 47, 49, 55, 57, 81].map(
+  galleryPath
+);
 
 const testimonials = [
   "I had an achy tennis elbow. I've had it for about 10 years. It's completely gone. &#128512;",
@@ -59,7 +69,7 @@ function selectRandomItems(arr, numItems) {
 // Before & after photo gallery
 const photoGallery = document.querySelector("#photo-gallery-grid");
 if (photoGallery) {
-  const randomPhotos = selectRandomItems(photos, 12);
+  const randomPhotos = selectRandomItems(beforeAfterPhotos, 12);
   randomPhotos.forEach((src, index) => {
     const col = document.createElement("div");
     col.className = "col-6 col-md-4 col-lg-3";
@@ -87,6 +97,23 @@ if (testimonialGrid) {
     card.appendChild(quoteText);
     col.appendChild(card);
     testimonialGrid.appendChild(col);
+  });
+}
+
+// Screenshots of customer posts, shown alongside the written testimonials
+const postGrid = document.querySelector("#customer-post-grid");
+if (postGrid) {
+  const randomPosts = selectRandomItems(customerPosts, 3);
+  randomPosts.forEach((src, index) => {
+    const col = document.createElement("div");
+    col.className = "col-6 col-md-4";
+    const image = document.createElement("img");
+    image.className = "gallery-thumb customer-post-thumb lightbox-item";
+    image.src = src;
+    image.loading = "lazy";
+    image.alt = `Screenshot of a customer post ${index + 1}`;
+    col.appendChild(image);
+    postGrid.appendChild(col);
   });
 }
 
