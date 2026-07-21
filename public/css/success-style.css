@@ -5,25 +5,49 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
-    line-height: 1.5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    background-color: rgba(255, 84, 106, 0.2);
-
-}
-
-.thank-you-container {
-    border: 1px solid black;
+    background: linear-gradient(160deg, #fff0f3 0%, #ffffff 55%, #fff0f3 100%);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40vh;
-    border-radius: 7px;
-    width: 80vw;
-    text-align: center;
-    background-color: rgba(255, 84, 106, 1);
+    padding: 1.5rem;
 }
 
-.thank-you-container a {
-    color: black;
+.thank-you-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(33, 37, 41, 0.08);
+    padding: 3rem 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.thank-you-container h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.thank-you-container p {
+    color: #495057;
+    margin-bottom: 1.75rem;
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #c9184a;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    transition: background-color 0.25s ease;
+}
+
+.back-link:hover {
+    background-color: #a4133c;
 }

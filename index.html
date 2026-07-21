@@ -2,32 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activated Glow | TrueScience Liquid Collagen</title>
     <meta
       name="description"
-      content="Experience the benefits of collagen with
-    our premium liquid supplement. Promote healthy skin, hair, nails and joints.
-    Order now and achieve a youthful glow!"
+      content="TrueScience Activated Liquid Collagen activates, replenishes, and maintains your body's own collagen. Support healthy skin, hair, nails, and joints."
     />
-    <title>
-      Activated Glow | Premium Liquid Collagen Supplement for Healthy Skin,
-      Hair, Nails and Joints
-    </title>
+    <link rel="canonical" href="https://activatedglow.com/" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://activatedglow.com/" />
+    <meta property="og:title" content="Activated Glow | TrueScience Liquid Collagen" />
+    <meta
+      property="og:description"
+      content="A liquid collagen that activates, replenishes, and maintains your body's own collagen production. Get the glow from within."
+    />
+    <meta property="og:image" content="https://activatedglow.com/public/imgs/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Activated Glow | TrueScience Liquid Collagen" />
+    <meta
+      name="twitter:description"
+      content="A liquid collagen that activates, replenishes, and maintains your body's own collagen production."
+    />
+    <meta name="twitter:image" content="https://activatedglow.com/public/imgs/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "TrueScience Activated Liquid Collagen",
+        "image": "https://activatedglow.com/public/imgs/og-image.jpg",
+        "description": "A daily liquid collagen supplement that activates, replenishes, and maintains the body's own collagen production to support skin firmness, elasticity, and hydration.",
+        "brand": { "@type": "Brand", "name": "LifeVantage" },
+        "url": "https://activatedglow.com/"
+      }
+    </script>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -49,29 +77,16 @@
     />
     <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="./public/css/styles.css" />
-    <!-- <link
-      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
   </head>
 
   <body>
-    <header>
-      <img
-        id="header-image"
-        src="./public/imgs/header-image-scaled.png"
-        alt="header image, collagen bottle and life with true confidence saying"
-      />
-    </header>
-
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#top">
           <img
             id="logo"
             src="./public/imgs/activated-glow-logo.png"
-            alt="Activated collagen product logo"
+            alt="Activated Glow logo"
           />
         </a>
         <button
@@ -86,387 +101,320 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#ingredients">What's in it?</a>
+              <a class="nav-link" href="#ingredients">What's In It</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#featured-products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#comparison">Science & Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#photo-gallery"
-                >Before & After Photos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" href="#photo-gallery">Results</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#consultants">Become a Consultant</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#influencers">Influencers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#why">Why Collagen?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resources">More Resources</a>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn btn-brand nav-cta"
+                href="https://activatedglow.lifevantage.com/us-en/shop/categories/collagen"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Shop Now</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="main" id="main">
-      <div class="container content">
-        <div class="row">
-          <div class="col-md-6">
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center" data-aos="fade-up">
             <img
-              data-aos="fade"
-              data-aos-duration="1500"
-              class="main-image"
-              src="./public/imgs/collagen-bottle.png"
-              alt="lifevantage collagen bottle"
+              class="hero-bottle"
+              src="./public/imgs/collagen-bottle.webp"
+              alt="Bottle of TrueScience Activated Liquid Collagen"
+              width="700"
+              height="700"
+              fetchpriority="high"
             />
           </div>
-
-          <div class="col-md-6">
-            <b class="badge"> Activate. Replenish. Maintain. </b>
-
-            <h1 class="main-title">
-              True<span class="bold">Science</span>® Liquid Collagen
+          <div class="col-lg-6 order-lg-1" data-aos="fade-up">
+            <span class="hero-badge">Activate&nbsp;&middot;&nbsp;Replenish&nbsp;&middot;&nbsp;Maintain</span>
+            <h1 class="hero-title">
+              True<span class="accent">Science</span>&reg;<br />Liquid Collagen
             </h1>
-
-            <p class="justify-text">
+            <p class="hero-lead">
               Get healthy, glowing skin with a delicious blend that activates,
               replenishes, and maintains collagen to support firmness and
               elasticity from within.*
             </p>
-            <p class="justify-text">
-              For more information and to shop for products, click the button
-              below.
-            </p>
-
-            <img
-              data-aos="fade"
-              data-aos-duration="1500"
-              class="img-fluid"
-              id="health-icons"
-              src="./public/imgs/icon-images/three-icons-cropped.png"
-              alt="icons showing non-gmo, gluten free and free of artifical products"
-            />
-            <div class="row">
-              <div class="col-md-6">
-                <div class="text-center mt-5">
-                  <a
-                    href="https://activatedglow.lifevantage.com/us-en/shop/categories/collagen"
-                    target="_blank"
-                    ><button id="main-button">Shop Now</button></a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="text-center mt-5">
-                  <a href="https://bit.ly/3l2Zx3N" target="_blank"
-                    ><button id="consultant-button">
-                      Sign Up As A Consultant
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-            <hr />
-            <p class="text-center" id="quote"></p>
-            <p id="author"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ingredients" id="ingredients">
-      <div class="container">
-        <div class="row">
-          <h2 class="text-center mt-3">What's In it and How Does it Work?</h2>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-3">
-            <img
-              data-aos="flip-right"
-              data-aos-duration="1100"
-              class="ingredients-image"
-              src="./public/imgs/icon_Formosa-Ruby-Quinoa-Extract.png"
-              alt="ruby quinoa extract picture"
-            />
-            <h3
-              data-aos="fade"
-              data-aos-duration="1100"
-              class="text-center ingredients-category-title"
-            >
-              <strong>ACTIVATE</strong>
-            </h3>
-            <h4 class="text-center">
-              <strong>Ruby Quinoa Extract</strong>
-            </h4>
-            <p class="justify-text ingredients-category-description">
-              Our grain extract unlocks your cells' potential to absorb collagen
-              while simultaneously activating the natural synthesis of collagen.
-              This process reduces the appearance of fine lines and wrinkles,
-              leaving your skin looking radiant and youthful.*
-            </p>
-          </div>
-          <div class="col-md-3">
-            <img
-              data-aos="flip-right"
-              data-aos-duration="1100"
-              class="ingredients-image"
-              src="./public/imgs/icon_Marine-Collagen.png"
-              alt="marine collagen picture"
-              loading="lazy"
-            />
-            <h3
-              data-aos="fade"
-              data-aos-duration="1100"
-              class="text-center ingredients-category-title"
-            >
-              <strong>REPLENISH</strong>
-            </h3>
-            <h4 class="text-center"><strong>Fish Collagen Peptides</strong></h4>
-            <p class="justify-text ingredients-category-description">
-              We source our fish responsibly to bring you the highest quality
-              product. Our fish is rich in peptides derived from 10 different
-              types of collagens, along with amino acids that effectively
-              support collagen density, elasticity, and moisture, promoting a
-              youthful and vibrant appearance.*
-            </p>
-          </div>
-          <div class="col-md-3">
-            <img
-              data-aos="flip-right"
-              data-aos-duration="1100"
-              class="ingredients-image"
-              src="./public/imgs/icon_Berry-and-Citrus-Extract.png"
-              alt="berry and citrus extract picture"
-            />
-            <h3
-              data-aos="fade"
-              data-aos-duration="1100"
-              class="text-center ingredients-category-title"
-            >
-              <strong>MAINTAIN</strong>
-            </h3>
-            <h4 class="text-center">
-              <strong>Proprietary Blend & Citrus Blend</strong>
-            </h4>
-
-            <p class="justify-text ingredients-category-description">
-              The extracts of blueberry, acerola berry, and young ponkan fruit
-              are rich in vitamin C and antioxidants, which effectively support
-              the production of collagen and elastin. By preventing breakdown,
-              they assist in maintaining a youthful, healthy, and radiant
-              complexion for your skin.*
-            </p>
-          </div>
-          <div class="col-md-3">
-            <img
-              data-aos="flip-right"
-              data-aos-duration="1100"
-              class="ingredients-image"
-              src="./public/imgs/icon_Young-Ponkan-Fruit.png"
-              alt="young ponkan fruit image"
-            />
-            <h3
-              data-aos="fade"
-              data-aos-duration="1100"
-              class="text-center ingredients-category-title"
-            >
-              <strong>PURE</strong>
-            </h3>
-            <h4 class="text-center"><strong>Appleberry Flavor</strong></h4>
-            <p class="justify-text ingredients-category-description">
-              Enjoy the natural flavors of apple, cranberry, raspberry, and
-              strawberry without any added sugar or artificial sweeteners. Our
-              product is free from GMO's and gluten, and has no unpleasant
-              aftertaste. Moreover, it is crafted with a sense of responsibility
-              and sustainability, ensuring that it is not only healthy for you
-              but also for our planet.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <h2 class="text-center ingredients-call-to-action">
-            Every other collagen product simply puts collagen into your body.
-          </h2>
-          <h3 class="text-center mb-3">
-            Only True<strong>Science</strong>® Activated Liquid Collagen
-            <em><strong>activates, replenishes</strong></em> and
-            <em><strong>maintains</strong></em> your own body's collagen
-            production.
-          </h3>
-        </div>
-      </div>
-    </section>
-    <section class="featured-products" id="featured-products">
-      <div class="container">
-        <div class="row">
-          <h2 id="featured-products-title" class="text-center section-heading">
-            Featured Products
-          </h2>
-          <hr />
-
-          <div class="col-md-6">
-            <h3 class="text-center subheading">
-              TrueScience&#174; Liquid Collagen
-            </h3>
-            <div>
-              <img
-                data-aos="flip-left"
-                data-aos-duration="1000"
-                class="mb-3 product-image img-fluid"
-                id="collagen-bottle-image"
-                src="./public/imgs/collagen-bottle.jpg"
-                loading="lazy"
-                alt="bottle of activated liquid collagen product picture"
-              />
-            </div>
-            <h3 class="tagline text-center">
-              <span><em>Get The Glow</em></span>
-            </h3>
-            <div>
-              <span class="thirty-day-supply"
-                ><p>30-Day Supply | Money Back Guarantee</p></span
-              >
-            </div>
-            <div class="text-center">
+            <ul class="hero-checks list-unstyled">
+              <li><i class="bi bi-check-circle-fill"></i> Non-GMO</li>
+              <li><i class="bi bi-check-circle-fill"></i> Gluten free</li>
+              <li><i class="bi bi-check-circle-fill"></i> No artificial sweeteners</li>
+            </ul>
+            <div class="hero-cta">
               <a
-                href="https://cart.lifevantage.com/US/shoppingcart/share/b8337bbd-d14b-43ce-baf9-c625e39e6ce2"
+                class="btn btn-brand btn-lg"
+                href="https://activatedglow.lifevantage.com/us-en/shop/categories/collagen"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><button class="btn">Buy Now</button></a
+                >Shop Now</a
+              >
+              <a class="btn btn-outline-brand btn-lg" href="#consultants"
+                >Become a Consultant</a
               >
             </div>
-            <p id="collagen-description" class="justify-text p-2">
-              Activated Liquid Collagen is a different, better collagen
-              supplement. Your body's ability to produce its own collagen
-              decreases significantly starting in your twenties. This daily
-              boost of collagen and exclusive botanicals activates your body's
-              collagen production, replenishes your depleting collagen levels,
-              and maintains those levels by reducing enzymes that break down
-              collagen. It also helps protect against the damaging effects of
-              oxidative stress, caused by free radicals. The proprietary
-              ingredients in this delicious blend have been clinically shown to
-              deliver visible support to skin health and hydration in eight
-              weeks or less. Your skin looks smoother, softer, and more even,
-              with improved elasticity. With more youthful-looking skin, you'll
-              glow with True Confidence. You get real results that you can
-              see—and feel.*
-            </p>
+            <figure class="hero-quote">
+              <blockquote class="hero-quote-text" id="quote"></blockquote>
+              <figcaption class="hero-quote-author" id="author"></figcaption>
+            </figure>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-md-6">
-            <h3 class="text-center subheading">
-              Healthy Glow Essentials Stack&trade;
-            </h3>
-            <div>
+    <section class="ingredients section" id="ingredients">
+      <div class="container">
+        <h2 class="text-center section-heading">
+          What's In It and How Does It Work?
+        </h2>
+        <hr class="section-rule" />
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="ingredient-card">
               <img
-                data-aos="flip-left"
-                data-aos-duration="1000"
-                class="mb-3 product-image img-fluid"
-                id="essential-stack-image"
-                src="./public/imgs/collagen-nrf2.jpg"
+                class="ingredients-image"
+                src="./public/imgs/icon_Formosa-Ruby-Quinoa-Extract.png"
+                alt="Illustration of ruby quinoa extract"
                 loading="lazy"
-                alt="bottle of activated liquid collage and a bottle of NRF-2 side by side product picture"
+                width="150"
+                height="150"
               />
+              <h3 class="ingredients-category-title">Activate</h3>
+              <h4 class="ingredients-name">Ruby Quinoa Extract</h4>
+              <p class="ingredients-category-description">
+                Our grain extract unlocks your cells' potential to absorb
+                collagen while activating the natural synthesis of collagen —
+                reducing the appearance of fine lines and wrinkles.*
+              </p>
             </div>
-            <h3 class="tagline text-center">
-              <span><em>Ready.Set.Glow</em></span>
-            </h3>
-            <div>
-              <span class="thirty-day-supply"
-                ><p>30-Day Supply | Money Back Guarantee</p></span
-              >
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="ingredient-card">
+              <img
+                class="ingredients-image"
+                src="./public/imgs/icon_Marine-Collagen.png"
+                alt="Illustration of marine collagen"
+                loading="lazy"
+                width="150"
+                height="150"
+              />
+              <h3 class="ingredients-category-title">Replenish</h3>
+              <h4 class="ingredients-name">Fish Collagen Peptides</h4>
+              <p class="ingredients-category-description">
+                Responsibly sourced fish rich in peptides from 10 different
+                collagen types, plus amino acids that support collagen density,
+                elasticity, and moisture.*
+              </p>
             </div>
-            <div class="text-center">
-              <a
-                href="https://cart.lifevantage.com/US/shoppingcart/share/d65f1833-881a-47b9-a463-44433be99a48"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button class="btn">Buy Now</button></a
-              >
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="ingredient-card">
+              <img
+                class="ingredients-image"
+                src="./public/imgs/icon_Berry-and-Citrus-Extract.png"
+                alt="Illustration of berry and citrus extract"
+                loading="lazy"
+                width="150"
+                height="150"
+              />
+              <h3 class="ingredients-category-title">Maintain</h3>
+              <h4 class="ingredients-name">Berry &amp; Citrus Blend</h4>
+              <p class="ingredients-category-description">
+                Blueberry, acerola berry, and young ponkan fruit extracts are
+                rich in vitamin C and antioxidants that support collagen and
+                elastin production and help prevent breakdown.*
+              </p>
             </div>
-
-            <p id="essential-stack-description" class="justify-text p-2">
-              Vibrant, youthful skin comes from within when you pair two
-              products with beautifully ageless benefits. Together, TrueScience®
-              Liquid Collagen and Protandim® Nrf2 Synergizer® help rebuild
-              collagen from within and defend your skin health. Liquid Collagen
-              helps activate your body's ability to create collagen and helps
-              reduce the appearance of fine lines and wrinkles as it increases
-              your skin's moisture and improves texture. Nrf2 Synergizer helps
-              minimize visible effects caused by oxidative stress and activates
-              the production of antioxidants. You'll feel good in your skin and
-              glow from within.*
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="ingredient-card">
+              <img
+                class="ingredients-image"
+                src="./public/imgs/icon_Young-Ponkan-Fruit.png"
+                alt="Illustration of young ponkan fruit"
+                loading="lazy"
+                width="150"
+                height="150"
+              />
+              <h3 class="ingredients-category-title">Pure</h3>
+              <h4 class="ingredients-name">Appleberry Flavor</h4>
+              <p class="ingredients-category-description">
+                Natural apple, cranberry, raspberry, and strawberry flavors with
+                no added sugar, no artificial sweeteners, no GMOs, no gluten —
+                and no unpleasant aftertaste.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="ingredients-call-to-action">
+              Every other collagen product simply puts collagen into your body.
+            </h2>
+            <p class="ingredients-call-to-action-sub">
+              Only True<strong>Science</strong>&reg; Activated Liquid Collagen
+              <em>activates, replenishes,</em> and <em>maintains</em> your own
+              body's collagen production.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="comparison" id="comparison">
-      <div class="container my-4">
-        <div class="row">
-          <h2 class="text-center section-heading">Science & Comparison</h2>
-          <hr />
+    <section class="featured-products section" id="featured-products">
+      <div class="container">
+        <h2 class="text-center section-heading">Featured Products</h2>
+        <hr class="section-rule" />
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="product-card">
+              <h3 class="subheading text-center">
+                TrueScience&reg; Liquid Collagen
+              </h3>
+              <img
+                class="product-image"
+                src="./public/imgs/product-liquid-collagen.webp"
+                loading="lazy"
+                alt="Bottle of TrueScience Activated Liquid Collagen"
+              />
+              <p class="tagline text-center"><em>Get The Glow</em></p>
+              <p class="supply-note text-center">
+                30-Day Supply &middot; Money Back Guarantee
+              </p>
+              <div class="text-center">
+                <a
+                  href="https://cart.lifevantage.com/US/shoppingcart/share/b8337bbd-d14b-43ce-baf9-c625e39e6ce2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-brand btn-lg product-buy"
+                  >Buy Now</a
+                >
+              </div>
+              <p class="product-description">
+                Your body's ability to produce collagen decreases significantly
+                starting in your twenties. This daily boost of collagen and
+                exclusive botanicals activates your body's collagen production,
+                replenishes depleting collagen levels, and maintains those
+                levels by reducing the enzymes that break collagen down.
+              </p>
+              <p class="product-description">
+                The proprietary ingredients in this delicious blend have been
+                clinically shown to deliver visible support to skin health and
+                hydration in eight weeks or less. Skin looks smoother, softer,
+                and more even, with improved elasticity.*
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-card">
+              <h3 class="subheading text-center">
+                Healthy Glow Essentials Stack&trade;
+              </h3>
+              <img
+                class="product-image"
+                src="./public/imgs/product-glow-stack.webp"
+                loading="lazy"
+                alt="TrueScience Liquid Collagen and Protandim Nrf2 Synergizer bottles side by side"
+              />
+              <p class="tagline text-center"><em>Ready. Set. Glow.</em></p>
+              <p class="supply-note text-center">
+                30-Day Supply &middot; Money Back Guarantee
+              </p>
+              <div class="text-center">
+                <a
+                  href="https://cart.lifevantage.com/US/shoppingcart/share/d65f1833-881a-47b9-a463-44433be99a48"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-brand btn-lg product-buy"
+                  >Buy Now</a
+                >
+              </div>
+              <p class="product-description">
+                Vibrant, youthful skin comes from within when you pair two
+                products with beautifully ageless benefits. TrueScience&reg;
+                Liquid Collagen helps activate your body's ability to create
+                collagen, reduces the appearance of fine lines and wrinkles, and
+                improves your skin's moisture and texture.
+              </p>
+              <p class="product-description">
+                Protandim&reg; Nrf2 Synergizer&reg; helps minimize the visible
+                effects of oxidative stress and activates the production of
+                antioxidants — so you feel good in your skin and glow from
+                within.*
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-md-4">
-            <div data-aos="flip-up" data-aos-duration="1000" class="card">
-              <h6 class="card-content text-center">
+    <section class="comparison section" id="comparison">
+      <div class="container">
+        <h2 class="text-center section-heading">Science &amp; Comparison</h2>
+        <hr class="section-rule" />
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="media-card">
+              <p class="media-card-caption">
                 Dr. Zand discusses the benefits of Activated Liquid Collagen
-              </h6>
-              <div class="container text-center ratio ratio-4x3">
+              </p>
+              <div class="ratio ratio-16x9">
                 <video
                   id="video"
                   class="video-embed"
-                  src="/public/imgs/zand-video.mp4"
                   controls
-                  poster="public/imgs/zand-thumb.jpg"
+                  preload="none"
+                  poster="./public/imgs/zand-thumb.webp"
                 >
-                  <source src="/public/imgs/zand-video.mp4" type="video/mp4" />
+                  <source src="./public/imgs/zand-video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div data-aos="flip-up" data-aos-duration="1000" class="card">
-              <h6>
-                ABC News Investigative Report: Protandim Nrf2 Synergizer&trade;
-              </h6>
-              <div class="container text-center ratio ratio-4x3">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="media-card">
+              <p class="media-card-caption">
+                ABC News investigative report: Protandim Nrf2 Synergizer&trade;
+              </p>
+              <div class="ratio ratio-16x9">
                 <iframe
                   class="video-embed"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/-dHxKOUxXxo"
-                  title="YouTube video player"
-                  frameborder="0"
+                  src="https://www.youtube-nocookie.com/embed/-dHxKOUxXxo"
+                  title="ABC News investigative report on Protandim"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="media-card">
+              <p class="media-card-caption">
+                How Activated Liquid Collagen compares to other collagen
+                products
+              </p>
               <img
-                data-aos="flip-up"
-                data-aos-duration="1000"
-                class="img-fluid image"
-                id="comparison-chart"
+                class="img-fluid comparison-chart lightbox-item"
                 src="./public/imgs/comparison-chart.webp"
-                alt="activated collagen comparison to other collagen product chart"
+                loading="lazy"
+                alt="Chart comparing TrueScience Activated Liquid Collagen to other collagen products"
               />
             </div>
           </div>
@@ -474,333 +422,310 @@
       </div>
     </section>
 
-    <section class="photo-gallery">
+    <section class="photo-gallery section" id="photo-gallery">
       <div class="container">
-        <div class="row" id="photo-gallery">
-          <h2 class="text-center mb-6 section-heading">
-            Before & After Photos
-          </h2>
-          <hr />
-        </div>
+        <h2 class="text-center section-heading">Before &amp; After Photos</h2>
+        <hr class="section-rule" />
+        <div class="row g-3" id="photo-gallery-grid"></div>
+        <p class="results-disclaimer text-center">
+          Individual results shared by real customers. Results may vary and are
+          not guaranteed.
+        </p>
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials section" id="testimonials">
       <div class="container">
-        <div class="row" id="testimonials">
-          <h2 class="text-center mb-6 section-heading">Testimonials</h2>
-          <hr />
-        </div>
+        <h2 class="text-center section-heading">Testimonials</h2>
+        <hr class="section-rule" />
+        <div class="row g-4" id="testimonial-grid"></div>
+        <p class="results-disclaimer text-center">
+          These are individual experiences and are not typical results. Results
+          may vary.*
+        </p>
       </div>
     </section>
 
-    <section class="consultants" id="consultants">
-      <div class="container my-4">
-        <div class="row">
-          <h2 class="text-center section-heading">
-            Do You Want To Become A Product Consultant And Make Money?
-          </h2>
-          <hr />
-          <div class="col-md-6">
-            <div class="mb-3">
-              <img
-                data-aos="fade"
-                data-aos-duration="1800"
-                class="img-fluid image"
-                id="influencer-image"
-                src="./public/imgs/influencer/LFVNCollagenCashSocial_1022Update_CollagenCash_STGLFST_02_Post01.jpg"
-                alt="a social media influencer holding a bottle of collagen and taking a selfie"
-              />
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="text-center">
-              Become An Independent Product Consultant
-            </h3>
-            <h2 class="free-trial-headline text-center">
-              The Ideal Side Hustle
-            </h2>
-
-            <hr />
-            <p class="lead justify-text p-2">
-              It's time to take action! Whether you're searching for additional
-              income or a full-time career, we provide the platform and
-              resources to help you launch your own business. Don't ignore that
-              entrepreneurial itch any longer. Over a decade ago, we made a
-              daring decision to remove our successful products from store
-              shelves. We felt that being in big box stores went against our
-              values. Instead of lining our pockets, we began rewarding our
-              customers. We realized our success was not due to fancy packaging
-              or expensive advertising, but because our customers were happy
-              with the results and shared their experiences with others. So, why
-              not pay them for it? We established an opportunity for any
-              customer to make money by becoming a LifeVantage Consultant. Join
-              us now and start earning!
-            </p>
-            <p class="lead justify-text p-2">
-              Fill out and submit the form below if you would like additional
-              information or, if you are ready to get started as a consultant,
-              click the button below
-            </p>
-            <div class="col-md-12">
-              <div class="text-center mt-5">
-                <a href="https://bit.ly/3l2Zx3N" target="_blank"
-                  ><button id="consultant-button">
-                    Sign Up As A Consultant
-                  </button></a
-                >
-              </div>
-            </div>
-            <hr />
-            <h2 class="free-trial-headline text-center">
-              Request More Information
-            </h2>
-            <div>
-              <form
-                name="consultant"
-                method="post"
-                data-netlify="true"
-                action="/success"
-              >
-                <!-- Name input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="name">Name</label>
-                </div>
-
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="email">Email Address</label>
-                </div>
-                <!-- Social Media -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="phone"
-                    id="phone-number"
-                    name="phone-number"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="phone-number"
-                    >Phone Number</label
-                  >
-                </div>
-                <!-- Message input -->
-                <div class="form-outline mb-4">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                  ></textarea>
-                  <label class="form-label" for="message">Message</label>
-                </div>
-
-                <!-- Submit button -->
-                <div class="text-center">
-                  <button type="submit" class="btn btn-block mb-4">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="influencers" id="influencers">
-      <div class="container my-4">
-        <div class="row">
-          <h2 class="text-center section-heading">Are You An Influencer?</h2>
-          <hr />
-          <div class="col-md-6">
-            <div class="mb-3">
-              <img
-                data-aos="fade"
-                data-aos-duration="1800"
-                class="img-fluid image"
-                id="influencer-image"
-                src="./public/imgs/influencer/influencer.png"
-                alt="a social media influencer holding a bottle of collagen and taking a selfie"
-              />
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="text-center">Apply now for a</h3>
-            <h2 class="free-trial-headline text-center">
-              FREE 30-Day Liquid Collagen Trial
-            </h2>
-
-            <hr />
-            <p class="lead justify-text p-2">
-              Attention all social media influencers! Are you looking for a
-              game-changing product that will take your social media game to the
-              next level? Look no further than TrueScience liquid collagen!
-              We're searching for three social media superstars who want to
-              experience the transformative power of our premium collagen
-              supplement - and we're giving it away for FREE for 30 days! Share
-              your glowing transformation and watch the order and money in your
-              pocket roll in! No inventory, no payment processing and up to a
-              30% margin on your sales! With its revolutionary formula,
-              TrueScience liquid collagen is a must-have addition to any
-              influencer's beauty routine and product offering. Don't miss out
-              on this incredible opportunity to enhance your beauty, elevate
-              your social media presence, and make money! Fill out the form
-              below and we will contact you!
-            </p>
-            <div>
-              <form
-                name="contact"
-                method="post"
-                data-netlify="true"
-                action="/success"
-              >
-                <!-- Name input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="name">Name</label>
-                </div>
-
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="email">Email Address</label>
-                </div>
-                <!-- Social Media -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="social-media"
-                    name="social-media"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="social-media"
-                    >Social Media Accounts</label
-                  >
-                </div>
-                <!-- Message input -->
-                <div class="form-outline mb-4">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                  ></textarea>
-                  <label class="form-label" for="message">Message</label>
-                </div>
-
-                <!-- Submit button -->
-                <div class="text-center">
-                  <button type="submit" class="btn btn-block mb-4">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why" id="why">
+    <section class="consultants section" id="consultants">
       <div class="container">
-        <div class="row">
-          <h2 class="text-center section-heading">Why Do You Need Collagen?</h2>
-          <hr />
-          <div class="col-md-6 mb-4">
+        <h2 class="text-center section-heading">
+          Become a Product Consultant
+        </h2>
+        <hr class="section-rule" />
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
             <img
-              data-aos="fade"
-              data-aos-duration="1800"
-              class="img-fluid image mb-3"
-              src="./public/imgs/IMG_0553.jpg"
-              alt="a girl with her hands on the sides of her face"
-              style="object-fit: cover; height: 100%"
+              class="img-fluid image"
+              src="./public/imgs/influencer/consultant-social.webp"
+              loading="lazy"
+              alt="A person taking a selfie while holding a bottle of liquid collagen"
             />
           </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col mx-auto">
-                <img
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
-                  src="./public/imgs/TS-Collagen-Improve-skin-moisture.png"
-                  alt="collagen logo illustrating improving skin moisture"
-                  class="img-fluid mb-3 why-collagen-icons"
+          <div class="col-lg-6">
+            <h3 class="free-trial-headline">The Ideal Side Hustle</h3>
+            <p>
+              Whether you're searching for additional income or a full-time
+              career, we provide the platform and resources to help you launch
+              your own business.
+            </p>
+            <p>
+              Over a decade ago, LifeVantage made a daring decision to remove
+              its successful products from store shelves. Success wasn't due to
+              fancy packaging or expensive advertising — it came from happy
+              customers sharing their results with others. So instead of paying
+              big-box retailers, LifeVantage created a way for any customer to
+              earn money as an independent consultant.
+            </p>
+            <p>
+              Ready to get started? Sign up below, or send us a note and we'll
+              share more information.
+            </p>
+            <div class="text-center my-4">
+              <a
+                href="https://bit.ly/3l2Zx3N"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-brand btn-lg"
+                >Sign Up As A Consultant</a
+              >
+            </div>
+            <h4 class="form-heading">Request More Information</h4>
+            <form
+              name="consultant"
+              method="post"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/success"
+            >
+              <input type="hidden" name="form-name" value="consultant" />
+              <p class="visually-hidden">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </p>
+              <div class="mb-3">
+                <label class="form-label" for="consultant-name">Name</label>
+                <input
+                  type="text"
+                  id="consultant-name"
+                  name="name"
+                  class="form-control"
+                  autocomplete="name"
+                  required
                 />
-                <p class="text-center why-icon-text" style="font-size: 1.1rem">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="consultant-email"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="consultant-email"
+                  name="email"
+                  class="form-control"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="consultant-phone"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="consultant-phone"
+                  name="phone-number"
+                  class="form-control"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="consultant-message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="consultant-message"
+                  name="message"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-brand btn-lg px-5">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="influencers section" id="influencers">
+      <div class="container">
+        <h2 class="text-center section-heading">Are You An Influencer?</h2>
+        <hr class="section-rule" />
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-up">
+            <img
+              class="img-fluid image"
+              src="./public/imgs/influencer/influencer.webp"
+              loading="lazy"
+              alt="A social media influencer recording a video with a bottle of liquid collagen"
+            />
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <h3 class="free-trial-headline">
+              Apply for a FREE 30-Day Liquid Collagen Trial
+            </h3>
+            <p>
+              We're searching for three social media superstars to experience
+              the transformative power of TrueScience liquid collagen — free
+              for 30 days.
+            </p>
+            <p>
+              Share your glowing transformation with your audience and earn up
+              to a 30% margin on your sales — with no inventory to carry and no
+              payment processing to manage.
+            </p>
+            <p>
+              Fill out the form below and we will contact you!
+            </p>
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/success"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="visually-hidden">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </p>
+              <div class="mb-3">
+                <label class="form-label" for="influencer-name">Name</label>
+                <input
+                  type="text"
+                  id="influencer-name"
+                  name="name"
+                  class="form-control"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="influencer-email"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="influencer-email"
+                  name="email"
+                  class="form-control"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="influencer-social"
+                  >Social Media Accounts</label
+                >
+                <input
+                  type="text"
+                  id="influencer-social"
+                  name="social-media"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="influencer-message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="influencer-message"
+                  name="message"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-brand btn-lg px-5">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section" id="why">
+      <div class="container">
+        <h2 class="text-center section-heading">Why Do You Need Collagen?</h2>
+        <hr class="section-rule" />
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <img
+              class="img-fluid image why-image"
+              src="./public/imgs/why-collagen-face.webp"
+              loading="lazy"
+              alt="A woman with glowing skin holding her hands to the sides of her face"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="row text-center why-benefits">
+              <div class="col-4">
+                <img
+                  src="./public/imgs/TS-Collagen-Improve-skin-moisture.png"
+                  alt="Icon representing improved skin moisture"
+                  class="why-collagen-icons"
+                  loading="lazy"
+                />
+                <p class="why-icon-text">
                   Improve skin moisture, tone, and texture.*
                 </p>
               </div>
-              <div class="col mx-auto">
+              <div class="col-4">
                 <img
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
                   src="./public/imgs/TS-Collagen-Protection-icon.png"
-                  alt="collagen logo for oxidative stress"
-                  class="img-fluid mb-3 why-collagen-icons"
+                  alt="Icon representing protection from oxidative stress"
+                  class="why-collagen-icons"
+                  loading="lazy"
                 />
-                <p class="text-center why-icon-text" style="font-size: 1.1rem">
+                <p class="why-icon-text">
                   Protect against damaging oxidative stress.*
                 </p>
               </div>
-              <div class="col mx-auto">
+              <div class="col-4">
                 <img
-                  data-aos="flip-left"
-                  data-aos-duration="1200"
                   src="./public/imgs/TS-Collagen-Reduce-Wrinkles.png"
-                  alt="collagen logo for reducing wrinkles"
-                  class="img-fluid mb-3 why-collagen-icons"
+                  alt="Icon representing wrinkle reduction"
+                  class="why-collagen-icons"
+                  loading="lazy"
                 />
-                <p class="text-center why-icon-text" style="font-size: 1.1rem">
+                <p class="why-icon-text">
                   Reduce the appearance of fine lines and wrinkles.*
                 </p>
               </div>
             </div>
             <hr />
-            <p class="justify-text">
-              Collagen, a vital protein, constitutes around 25-35% of all
-              proteins in the human body, synthesized from amino acids obtained
-              through our diets. After 30, collagen production decreases,
-              leading to a decline in collagen density, causing saggy, dull, and
-              wrinkled skin. Collagen health benefits extend beyond the skin,
-              including strengthening nails, preventing hair loss, promoting
-              muscle recovery, cushioning joints and ligaments, strengthening
-              bones, facilitating overall tissue repair, promoting gut health,
-              liver function, cardiovascular support, athletic recovery, sleep
-              quality, and mental/brain health.
+            <p>
+              Collagen is a vital protein that makes up around 25&ndash;35% of
+              all protein in the human body. After age 30, collagen production
+              declines, which can lead to saggy, dull, and wrinkled skin.
             </p>
-
-            <p class="justify-text">
-              To achieve a youthful appearance and healthy body, stress
-              reduction, proper sleep, a nutritious diet, and a skincare routine
-              are essential. Collagen supplements, available in various forms,
-              can complement these efforts, promoting overall health and
-              rejuvenation inside and out.
+            <p>
+              Collagen's benefits go well beyond the skin — it helps strengthen
+              nails and hair, supports muscle recovery, cushions joints and
+              ligaments, strengthens bones, and supports gut, heart, sleep, and
+              brain health.
             </p>
-
-            <div class="text-center mt-5">
+            <p>
+              Alongside stress reduction, proper sleep, a nutritious diet, and a
+              good skincare routine, a collagen supplement can help you look and
+              feel your best from the inside out.
+            </p>
+            <div class="text-center mt-4">
               <a
-                href="https://activatedglow.lifevantage.com/us-en/blog/all-about-collagen?fbclid=IwAR0IEIV5zKVzarYTuaHzOFNi073HIfLv6CfVHsU7CFrNGnem2-Lfasnuzqo&mibextid=Zxz2cZ"
-                ><button class="btn">More Collagen Info</button></a
+                href="https://activatedglow.lifevantage.com/us-en/blog/all-about-collagen"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-brand"
+                >More Collagen Info</a
               >
             </div>
           </div>
@@ -808,21 +733,18 @@
       </div>
     </section>
 
-    <section class="resource" id="resources">
-      <div class="container mb-5 p-5">
-        <div class="row">
-          <h2 class="text-center section-heading">Additional Resources</h2>
-          <hr />
+    <section class="resource section" id="resources">
+      <div class="container">
+        <h2 class="text-center section-heading">Additional Resources</h2>
+        <hr class="section-rule" />
+        <div class="row g-3">
           <div class="col-md-4 doc-links">
             <a
               href="https://cdn.lifevantage.com/wp-content/uploads/sites/1/2022/06/15095329/US-EN-TS-Liquid-Collagen-Product-Info-Sheet-V.04-1.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>
-                <i class="bi bi-filetype-pdf"></i>TS Liquid Collagen Product
-                Info
-              </h3>
+              <i class="bi bi-filetype-pdf"></i>TS Liquid Collagen Product Info
             </a>
           </div>
           <div class="col-md-4 doc-links">
@@ -831,9 +753,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>
-                <i class="bi bi-filetype-pdf"></i>TS Liquid Collagen TCI Study
-              </h3>
+              <i class="bi bi-filetype-pdf"></i>TS Liquid Collagen TCI Study
             </a>
           </div>
           <div class="col-md-4 doc-links">
@@ -842,98 +762,63 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>
-                <i class="bi bi-filetype-pdf"></i>Science - Liquid Collagen Info
-              </h3>
+              <i class="bi bi-filetype-pdf"></i>Science &mdash; Liquid Collagen
+              Info
             </a>
           </div>
         </div>
       </div>
     </section>
+
     <footer id="footer" class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-center">
-              &copy; Copyright 2023 | Activated Solutions, LLC
-            </p>
-          </div>
+        <p class="text-center">
+          &copy; Copyright <span id="copyright-year">2023</span> | Activated
+          Solutions, LLC
+        </p>
+        <div class="social-icons text-center">
+          <a
+            href="https://www.facebook.com/profile.php?id=100090250797429"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Activated Glow on Facebook"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
         </div>
-        <div class="row social-icons mb-6 text-center">
-          <div class="col-md-12 mb-6">
-            <a
-              href="https://www.facebook.com/profile.php?id=100090250797429&mibextid=LQQJ4d"
-              target="_blank"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-envelope"></i>
-          </div>
-        </div>
-        <div class="row mt-6">
-          <div class="col-md-12 mt-3">
-            <p class="text-center">
-              *DISCLOSURE: These statements have not been evaluated by the Food
-              and Drug Administration. These products are not intended to
-              diagnose, treat, cure or prevent any disease.
-            </p>
-            <p class="text-center">
-              This website is owned and operated by an independent LifeVantage
-              consultant.
-            </p>
-          </div>
-        </div>
+        <p class="text-center footer-disclaimer">
+          *DISCLOSURE: These statements have not been evaluated by the Food and
+          Drug Administration. These products are not intended to diagnose,
+          treat, cure or prevent any disease.
+        </p>
+        <p class="text-center footer-disclaimer">
+          This website is owned and operated by an independent LifeVantage
+          consultant.
+        </p>
       </div>
     </footer>
 
-    <!-- <footer class="footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-center">
-              &copy; Copyright 2023 | Activated Solutions, LLC
-            </p>
-          </div>
-        </div>
-        <div class="row social-icons mb-6">
-          <div class="col-md-12 social-icons mb-6">
-            <a
-              href="https://www.facebook.com/profile.php?id=100090250797429&mibextid=LQQJ4d"
-              target="_blank"
-              ><i class="bi bi-facebook"></i
-            ></a>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-envelope"></i>
-          </div>
-        </div>
-        <div class="row mt-6">
-          <div class="col-md-12 mt-6">
-            <p class="text-center mt-6">
-              *DISCLOSURE: These statements have not been evaluated by the Food
-              and Drug Administration. These products are not intended to
-              diagnose, treat, cure or prevent any disease.
-            </p>
-            <p class="text-center">
-              This website is owned and operated by an independent LifeVantage
-              consultant.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    <button onclick="scrollToTop()" id="backToTopBtn" title="Back to top">
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Back to top" aria-label="Back to top">
       <i class="bi bi-arrow-up-square"></i>
-      <!-- &uarr; -->
     </button>
 
+    <div id="lightbox" class="lightbox" hidden>
+      <button
+        type="button"
+        class="lightbox-close"
+        aria-label="Close photo viewer"
+      >
+        &times;
+      </button>
+      <img id="lightbox-image" src="" alt="Enlarged customer photo" />
+    </div>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./public/js/index.js"></script>
   </body>
 </html>

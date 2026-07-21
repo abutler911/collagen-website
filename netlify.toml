@@ -1,0 +1,28 @@
+# Netlify configuration for activatedglow.com
+
+# The forms post to /success; serve the success page there.
+[[redirects]]
+  from = "/success"
+  to = "/success.html"
+  status = 200
+
+# Long-lived caching for static assets (HTML stays revalidated by default).
+[[headers]]
+  for = "/public/imgs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/public/imgs/gallery/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/public/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/public/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
