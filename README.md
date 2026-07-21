@@ -8,11 +8,15 @@ The landing page uses straightforward and robust technologies including HTML, CS
 
 ### Animation on Scroll
 
-The Animation on Scroll library by [Michalsnik](https://github.com/michalsnik/aos) is utilized in this project to bring dynamic and eye-catching animations to elements as they enter the viewport. This adds a level of interactivity and modern design to the page.
+The Animation on Scroll library by [Michalsnik](https://github.com/michalsnik/aos) is utilized in this project to bring subtle animations to elements as they enter the viewport.
 
 ### Inspirational Quote Generator
 
-The landing page also includes a feature to generate random, inspirational quotes using a Quote Generator API. This serves to engage and motivate visitors, enhancing the overall user experience.
+The hero section shows a random inspirational quote on each visit, served from a local list (no external API required).
+
+### Photo Gallery & Testimonials
+
+Each visit shows a random selection of customer before-and-after photos (optimized WebP images with a click-to-enlarge lightbox) and written testimonials.
 
 ## Contribution and Feedback
 
